@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Central_server.ViewModels.StationDataVM>;
+<h3>Có <b>@Model.Count()</b> trạm vệ tinh</h3>
+@foreach (var item in Model)
+{
+    <div class="col-md-6 col-lg-6 col-xl-4">
+        <div class="rounded position-relative fruite-item">
+            <div class="fruite-img">
+                <a asp-controller="Stations" asp-action="Detail" asp-route-id="@item.StationId">
+                    <img src="~/images/users/esp32.jpg" class="img-fluid w-100 rounded-top" alt="Trạm vệ tinh">
+                </a>
+            </div>
+            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                <a asp-controller="Stations" asp-action="Detail" asp-route-id="@item.StationId">
+                    <h4>Vị trí: @item.Location</h4>
+                    <h5>Nhiệt độ: @item.Temperature độ C</h5>
+                </a>
+                <div class="d-flex justify-content-between flex-lg-wrap">
+                    <p class="text-dark fs-5 fw-bold mb-0">Độ ẩm: @item.Humidity%</p>
+                </div>
+                <p>Trạng thái: @(item.Status.HasValue && item.Status.Value ? "Hoạt động" : "Bị hỏng")</p>
+            </div>
+        </div>
+    </div>
+}

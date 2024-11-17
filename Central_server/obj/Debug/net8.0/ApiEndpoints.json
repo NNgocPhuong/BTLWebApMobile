@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Central_server.Controllers.SettingsController",
+    "Method": "GetResources",
+    "RelativePath": "api/Settings/resources",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

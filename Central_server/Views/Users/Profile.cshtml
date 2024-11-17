@@ -1,0 +1,41 @@
+﻿@model Central_server.ViewModels.UserVM
+@{
+    ViewData["Title"] = "Profile";
+}
+<div class="profile-container">
+    <h2>Welcome @Model.FullName</h2>
+    <div class="profile-details">
+        <h3>Profile Details</h3>
+        <p><strong>Họ và tên:</strong> @Model.FullName</p>
+        <p><strong>Mã số sinh viên:</strong> @Model.StudentId</p>
+        <p><strong>Tên đăng nhập:</strong> @Model.UserName</p>
+        <img src="~/images/users/@Model.PhotoUrl" class="img-fluid rounded" alt="@Model.FullName">
+    </div>
+    <div class="profile-actions">
+        <a asp-controller="Users" asp-action="Edit" asp-route-id="@Model.UserId" class="btn btn-primary">Chỉnh sửa thông tin</a>
+        <a asp-controller="Users" asp-action="Logout" class="btn btn-danger">Đăng xuất</a>
+    </div>
+</div>
+
+<style>
+    .profile-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .profile-details {
+        margin-bottom: 20px;
+    }
+    .profile-details p {
+        margin: 5px 0;
+    }
+    .profile-actions {
+        text-align: center;
+    }
+    .profile-actions .btn {
+        margin: 5px;
+    }
+</style>

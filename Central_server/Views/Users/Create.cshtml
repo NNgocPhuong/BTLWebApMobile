@@ -1,0 +1,52 @@
+﻿@model Central_server.ViewModels.UserVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Thêm thành viên</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.UserName" class="control-label"></label>
+                <input asp-for="@Model.UserName" class="form-control" />
+                <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Password" class="control-label"></label>
+                <input asp-for="@Model.Password" class="form-control" />
+                <span asp-validation-for="@Model.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.FullName" class="control-label"></label>
+                <input asp-for="@Model.FullName" class="form-control" />
+                <span asp-validation-for="@Model.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.StudentId" class="control-label"></label>
+                <input asp-for="@Model.StudentId" class="form-control" />
+                <span asp-validation-for="@Model.StudentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Photo" class="control-label"></label>
+                <input type="file" asp-for="@Model.Photo" class="form-control" />
+                <span asp-validation-for="@Model.Photo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

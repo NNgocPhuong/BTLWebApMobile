@@ -1,0 +1,39 @@
+﻿@model Central_server.ViewModels.UserVM
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Thông tin chi tiết</h1>
+
+<!-- Single Product Start -->
+<div class="container-fluid py-5 mt-5">
+    <div class="container py-5">
+        <div class="row g-4 mb-5">
+            <div class="col-lg-8 col-xl-9">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="border rounded">
+                            <a asp-controller="Users" asp-action="Detail" asp-route-id ="@Model.UserId">
+                                <img src="~/images/users/@Model.PhotoUrl" class="img-fluid rounded" alt="@Model.FullName">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="fw-bold mb-3">@Model.FullName</h4>
+                        <p class="mb-3">Mã số sinh viên: @Model.StudentId</p>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        
+    </div>
+</div>
+<!-- Single Product End -->
+
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.UserId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

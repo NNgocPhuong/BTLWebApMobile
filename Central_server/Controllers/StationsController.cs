@@ -2,6 +2,8 @@
 using Central_server.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace Central_server.Controllers
 {
@@ -15,7 +17,48 @@ namespace Central_server.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Station> stations = await _context.Stations.Include(s => s.SensorsData).ToListAsync();
+            // Call the API asynchronously
+            var client = new HttpClient();
+            var requestBody = new
+            {
+                action = "get_infor",
+                value = new { }
+            };
+            var content = new StringContent(JsonConvert.SerializeObject(requestBody), Encoding.UTF8, "application/json");
+            var responseTask = client.PostAsync("https://ducthinh.serveo.net/api", content);
+
+            // Load stations from the database asynchronously
+            var stationsTask = _context.Stations.Include(s => s.SensorsData).ToListAsync();
+
+            // Await both tasks to complete
+            await Task.WhenAll(responseTask, stationsTask);
+
+            var response = responseTask.Result;
+            var stations = stationsTask.Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                var responseData = await response.Content.ReadAsStringAsync();
+                var stationData = JsonConvert.DeserializeObject<getInforVM>(responseData);
+
+                // Save the data to the database
+                var station = await _context.Stations.FindAsync(1);
+                if (station != null)
+                {
+                    //station.Location = stationData.Location;
+                    //station.Status = stationData.Status;
+                    station.SensorsData.Add(new SensorsDatum
+                    {
+                        Temperature = stationData.Temperature,
+                        Humidity = stationData.Humidity,
+                        ValveState = true,
+                        Timestamp = DateTime.Now
+                    });
+                    _context.Stations.Update(station);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
             var result = stations.Select(x => new StationDataVM
             {
                 StationId = x.StationId,

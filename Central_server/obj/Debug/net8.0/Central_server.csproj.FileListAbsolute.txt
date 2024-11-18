@@ -286,3 +286,4 @@ D:\CodeProjectMini\Central_server\Central_server\bin\Debug\net8.0\runtimes\win\l
 D:\CodeProjectMini\Central_server\Central_server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\CodeProjectMini\Central_server\Central_server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\CodeProjectMini\Central_server\Central_server\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\CodeProjectMini\Central_server\Central_server\obj\Debug\net8.0\Central_server.sourcelink.json

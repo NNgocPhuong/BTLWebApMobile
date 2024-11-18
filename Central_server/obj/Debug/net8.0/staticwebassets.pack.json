@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\users\\esp32.jpg"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png",
+      "PackagePath": "staticwebassets\\images\\users\\sử dụng add transient,scope,singleton.png"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

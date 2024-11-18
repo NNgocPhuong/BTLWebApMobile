@@ -11,10 +11,10 @@ namespace Central_server.ViewModels
         [Required(ErrorMessage = "Mật khẩu không được để trống")]
         [Display(Name = "Mật khẩu")]
         public string Password { get; set; } = null!;
-        [Required(ErrorMessage = "Không được để trống")]
+        [Required(ErrorMessage = "*")]
         [Display(Name = "Họ và tên")]
         public string FullName { get; set; } = null!;
-        [Required(ErrorMessage = "Không được để trống")]
+        [Required(ErrorMessage = "*")]
         [Display(Name = "Mã số sinh viên")]
         public string StudentId { get; set; } = null!;
         [Display(Name = "Ảnh đại diện")]

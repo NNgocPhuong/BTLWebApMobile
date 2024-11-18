@@ -1315,6 +1315,88 @@
       ]
     },
     {
+      "Route": "images/users/sử dụng add transient,scope,singleton.m2hm1q5dtn.png",
+      "AssetFile": "images/users/sử dụng add transient,scope,singleton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 04:35:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m2hm1q5dtn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo="
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/sử dụng add transient,scope,singleton.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/users/sử dụng add transient,scope,singleton.png",
+      "AssetFile": "images/users/sử dụng add transient,scope,singleton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 04:35:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo="
+        }
+      ]
+    },
+    {
       "Route": "index.html",
       "AssetFile": "index.html",
       "Selectors": [],

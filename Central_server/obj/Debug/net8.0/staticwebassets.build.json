@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5T3bMW+pf6HHjcIMwaM9yyCr4kpC9VAqMu+ondXlRuI=",
+  "Hash": "enJILiY9wcZNn4MVWNRKBuusxi/JBPfyOAOSAyTsIxI=",
   "Source": "Central_server",
   "BasePath": "_content/Central_server",
   "Mode": "Default",
@@ -372,6 +372,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\QuangCao3.png"
+    },
+    {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/sử dụng add transient,scope,singleton#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m2hm1q5dtn",
+      "Integrity": "EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png"
     },
     {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\index.html",
@@ -5252,6 +5273,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-+6ufDcoLZfo7QqN9ZNOQbh37I1UID76eIqY0Pp+6Vwk="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/sử dụng add transient,scope,singleton.m2hm1q5dtn.png",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 04:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m2hm1q5dtn"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/sử dụng add transient,scope,singleton.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/sử dụng add transient,scope,singleton.png",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 18 Nov 2024 04:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo="
         }
       ]
     },

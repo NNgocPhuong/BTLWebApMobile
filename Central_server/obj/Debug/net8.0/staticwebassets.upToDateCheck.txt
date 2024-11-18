@@ -13,6 +13,7 @@ wwwroot\images\users\Lai4.png
 wwwroot\images\users\QuangCao.png
 wwwroot\images\users\QuangCao2.png
 wwwroot\images\users\QuangCao3.png
+wwwroot\images\users\sử dụng add transient,scope,singleton.png
 wwwroot\index.html
 wwwroot\js\main.js
 wwwroot\js\site.js

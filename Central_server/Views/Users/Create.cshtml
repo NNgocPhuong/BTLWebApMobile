@@ -18,9 +18,15 @@
             </div>
             <div class="form-group">
                 <label asp-for="@Model.Password" class="control-label"></label>
-                <input asp-for="@Model.Password" class="form-control" />
+                <input asp-for="@Model.Password" class="form-control" type="password" id="Password" />
                 <span asp-validation-for="@Model.Password" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label for="ConfirmPassword" class="control-label">Nhập lại mật khẩu</label>
+                <input type="password" class="form-control" id="Nhập lại mật khẩu" />
+                <span id="confirmPasswordError" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <label asp-for="@Model.FullName" class="control-label"></label>
                 <input asp-for="@Model.FullName" class="form-control" />
@@ -50,3 +56,16 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+<script>
+    document.getElementById('ConfirmPassword').addEventListener('input', function () {
+        var password = document.getElementById('Password').value;
+        var confirmPassword = document.getElementById('ConfirmPassword').value;
+        var errorSpan = document.getElementById('confirmPasswordError');
+
+        if (password !== confirmPassword) {
+            errorSpan.textContent = 'Mật khẩu không trùng khớp';
+        } else {
+            errorSpan.textContent = '';
+        }
+    });
+</script>

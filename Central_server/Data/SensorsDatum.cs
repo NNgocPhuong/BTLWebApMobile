@@ -13,8 +13,6 @@ public partial class SensorsDatum
 
     public double Humidity { get; set; }
 
-    public bool ValveState { get; set; }
-
     public DateTime? Timestamp { get; set; }
 
     public virtual Station? Station { get; set; }

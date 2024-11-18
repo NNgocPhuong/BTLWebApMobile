@@ -51,7 +51,6 @@ namespace Central_server.Controllers
                     {
                         Temperature = stationData.Temperature,
                         Humidity = stationData.Humidity,
-                        ValveState = true,
                         Timestamp = DateTime.Now
                     });
                     _context.Stations.Update(station);

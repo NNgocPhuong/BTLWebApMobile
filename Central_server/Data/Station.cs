@@ -11,7 +11,7 @@ public partial class Station
 
     public bool? Status { get; set; }
 
-    public virtual ICollection<Schedule> Schedules { get; set; } = new List<Schedule>();
-
     public virtual ICollection<SensorsDatum> SensorsData { get; set; } = new List<SensorsDatum>();
+
+    public virtual ICollection<Valf> Valves { get; set; } = new List<Valf>();
 }

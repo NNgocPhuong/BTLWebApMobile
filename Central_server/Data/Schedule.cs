@@ -7,15 +7,17 @@ public partial class Schedule
 {
     public int ScheduleId { get; set; }
 
-    public int? StationId { get; set; }
-
     public int? ValveId { get; set; }
 
-    public TimeOnly StartTime { get; set; }
+    public DateTime StartTime { get; set; }
 
-    public TimeOnly EndTime { get; set; }
+    public DateTime EndTime { get; set; }
 
     public string Frequency { get; set; } = null!;
 
-    public virtual Station? Station { get; set; }
+    public string? Status { get; set; }
+
+    public DateTime? CreatedAt { get; set; }
+
+    public virtual Valf? Valve { get; set; }
 }

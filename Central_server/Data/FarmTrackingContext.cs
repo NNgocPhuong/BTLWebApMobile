@@ -25,21 +25,31 @@ public partial class FarmTrackingContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
+    public virtual DbSet<Valf> Valves { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=THINKPAD-T490\\SQLEXPRESS01;Initial Catalog=FarmTracking;Persist Security Info=True;User ID=sa;Password=1;Trust Server Certificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=THINKPAD-T490\\SQLEXPRESS01;Initial Catalog=FarmTracking;Integrated Security=True;Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Schedule>(entity =>
         {
-            entity.HasKey(e => e.ScheduleId).HasName("PK__Schedule__9C8A5B4998BF8D86");
+            entity.HasKey(e => e.ScheduleId).HasName("PK__Schedule__9C8A5B4902049938");
 
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.EndTime).HasColumnType("datetime");
             entity.Property(e => e.Frequency).HasMaxLength(20);
+            entity.Property(e => e.StartTime).HasColumnType("datetime");
+            entity.Property(e => e.Status)
+                .HasMaxLength(20)
+                .HasDefaultValue("Active");
 
-            entity.HasOne(d => d.Station).WithMany(p => p.Schedules)
-                .HasForeignKey(d => d.StationId)
-                .HasConstraintName("FK__Schedules__Stati__52593CB8");
+            entity.HasOne(d => d.Valve).WithMany(p => p.Schedules)
+                .HasForeignKey(d => d.ValveId)
+                .HasConstraintName("FK__Schedules__Valve__29221CFB");
         });
 
         modelBuilder.Entity<SensorsDatum>(entity =>
@@ -81,6 +91,22 @@ public partial class FarmTrackingContext : DbContext
             entity.Property(e => e.PhotoUrl).HasMaxLength(200);
             entity.Property(e => e.StudentId).HasMaxLength(20);
             entity.Property(e => e.UserName).HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<Valf>(entity =>
+        {
+            entity.HasKey(e => e.ValveId).HasName("PK__Valves__A5F1AE77B1760FB1");
+
+            entity.Property(e => e.LastUpdated)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Status).HasMaxLength(20);
+            entity.Property(e => e.ValveName).HasMaxLength(100);
+            entity.Property(e => e.ValveType).HasMaxLength(50);
+
+            entity.HasOne(d => d.Station).WithMany(p => p.Valves)
+                .HasForeignKey(d => d.StationId)
+                .HasConstraintName("FK__Valves__StationI__02FC7413");
         });
 
         OnModelCreatingPartial(modelBuilder);

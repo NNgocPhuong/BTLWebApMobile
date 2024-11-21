@@ -1,4 +1,5 @@
 using Central_server.Data;
+using Central_server.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +23,8 @@ namespace Central_server
                     options.LogoutPath = "/Users/Logout";
                     options.AccessDeniedPath = "/AccessDenied";
                 });
+            // Register the hosted service
+            builder.Services.AddHostedService<StationDataFetcher>();
             var app = builder.Build();
             
 

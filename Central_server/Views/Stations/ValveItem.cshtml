@@ -1,0 +1,22 @@
+﻿@model Central_server.ViewModels.StationDetailVM;
+
+<div class="row">
+    @foreach (var item in Model.Valves)
+    {
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="rounded position-relative fruite-item">
+                <div class="fruite-img">
+                    <a asp-controller="Stations" asp-action="Detail" asp-route-id="@item.StationId">
+                        <img src="~/images/users/@item.ValveType" class="img-fluid w-100 rounded-top" alt="Valve">
+                    </a>
+                </div>
+                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                    <a asp-controller="Stations" asp-action="Detail" asp-route-id="@item.StationId">
+                        <h5>Tên: @item.ValveName</h5>
+                    </a>
+                    <p>Trạng thái: @(item.Status == "on" ? "Bật" : "Tắt")</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

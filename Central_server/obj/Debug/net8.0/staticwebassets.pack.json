@@ -61,8 +61,16 @@
       "PackagePath": "staticwebassets\\images\\users\\QuangCao3.png"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\bulb.jpg"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\esp32.jpg",
       "PackagePath": "staticwebassets\\images\\users\\esp32.jpg"
+    },
+    {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\pump.jpg"
     },
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png",

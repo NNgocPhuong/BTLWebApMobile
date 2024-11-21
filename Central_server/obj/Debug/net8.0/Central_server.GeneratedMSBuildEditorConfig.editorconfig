@@ -60,12 +60,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/CodeProjectMini/Central_server/Central_server/Views/Stations/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlvbnNcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/CodeProjectMini/Central_server/Central_server/Views/Stations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CodeProjectMini/Central_server/Central_server/Views/Stations/StationItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlvbnNcU3RhdGlvbkl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CodeProjectMini/Central_server/Central_server/Views/Stations/ValveItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlvbnNcVmFsdmVJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/CodeProjectMini/Central_server/Central_server/Views/Users/Create.cshtml]

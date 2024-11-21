@@ -1,5 +1,6 @@
 ﻿using Central_server.Data;
 using Central_server.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -17,46 +18,12 @@ namespace Central_server.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            // Call the API asynchronously
-            var client = new HttpClient();
-            var requestBody = new
-            {
-                action = "get_infor",
-                value = new { }
-            };
-            var content = new StringContent(JsonConvert.SerializeObject(requestBody), Encoding.UTF8, "application/json");
-            var responseTask = client.PostAsync("https://ducthinh.serveo.net/api", content);
-
             // Load stations from the database asynchronously
             var stationsTask = _context.Stations.Include(s => s.SensorsData).ToListAsync();
 
             // Await both tasks to complete
-            await Task.WhenAll(responseTask, stationsTask);
-
-            var response = responseTask.Result;
+            await stationsTask;
             var stations = stationsTask.Result;
-
-            if (response.IsSuccessStatusCode)
-            {
-                var responseData = await response.Content.ReadAsStringAsync();
-                var stationData = JsonConvert.DeserializeObject<getInforVM>(responseData);
-
-                // Save the data to the database
-                var station = await _context.Stations.FindAsync(1);
-                if (station != null)
-                {
-                    //station.Location = stationData.Location;
-                    //station.Status = stationData.Status;
-                    station.SensorsData.Add(new SensorsDatum
-                    {
-                        Temperature = stationData.Temperature,
-                        Humidity = stationData.Humidity,
-                        Timestamp = DateTime.Now
-                    });
-                    _context.Stations.Update(station);
-                    await _context.SaveChangesAsync();
-                }
-            }
 
             var result = stations.Select(x => new StationDataVM
             {
@@ -67,6 +34,31 @@ namespace Central_server.Controllers
                 Humidity = x.SensorsData.OrderByDescending(s => s.Timestamp).FirstOrDefault()?.Humidity ?? 0
             });
             return View(result);
+        }
+        [Authorize]
+        public async Task<IActionResult> Detail(int? id)
+        {
+            var station = await _context.Stations
+                .Include(s => s.SensorsData)
+                .Include(s => s.Valves)
+                .FirstOrDefaultAsync(s => s.StationId == id);
+            if (station == null)
+            {
+                return NotFound();
+
+            }
+
+            var stationDetail = new StationDetailVM
+            {
+                StationId = station.StationId,
+                Location = station.Location,
+                Status = station.Status,
+                Temperature = station.SensorsData.OrderByDescending(s => s.Timestamp).FirstOrDefault()?.Temperature ?? 0,
+                Humidity = station.SensorsData.OrderByDescending(s => s.Timestamp).FirstOrDefault()?.Humidity ?? 0,
+                Valves = station.Valves
+            };
+
+            return View(stationDetail);
         }
     }
 }

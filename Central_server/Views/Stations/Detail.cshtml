@@ -1,0 +1,19 @@
+﻿@model Central_server.ViewModels.StationDetailVM
+
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "_LayoutCustom";
+}
+
+<div>
+    <h3>Thông tin trạm</h3>
+    <p><strong>Tên trạm:</strong> @Model.Location</p>
+    <p><strong>Trạng thái:</strong> @(Model.Status.HasValue && Model.Status.Value ? "Hoạt động" : "Bị hỏng")</p>
+</div>
+
+<div>
+    <p><strong>Nhiệt độ:</strong> @Model.Temperature °C</p>
+    <p><strong>Độ ẩm:</strong> @Model.Humidity %</p>
+</div>
+
+@await Html.PartialAsync("ValveItem", Model)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "enJILiY9wcZNn4MVWNRKBuusxi/JBPfyOAOSAyTsIxI=",
+  "Hash": "Px/7VMUwUe5+qSXof0VZycPuodCEzWEUv7/W4KJQCkA=",
   "Source": "Central_server",
   "BasePath": "_content/Central_server",
   "Mode": "Default",
@@ -227,6 +227,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/bulb#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t3whf7lxe2",
+      "Integrity": "yTegh/Vwv51sgCAnRlUn3IpqQEepnT3f7NbR2Ni2O8Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\bulb.jpg"
+    },
+    {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\esp32.jpg",
       "SourceId": "Central_server",
       "SourceType": "Discovered",
@@ -309,6 +330,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\Lai4.png"
+    },
+    {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/pump#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5qp0xeg9jg",
+      "Integrity": "PXu3AN0A2ipp+OCD1cg36fm2n3yePb0+uYUQEPQGFYk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\pump.jpg"
     },
     {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao.png",
@@ -4703,6 +4745,88 @@
       ]
     },
     {
+      "Route": "images/users/bulb.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yTegh/Vwv51sgCAnRlUn3IpqQEepnT3f7NbR2Ni2O8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Nov 2024 05:13:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yTegh/Vwv51sgCAnRlUn3IpqQEepnT3f7NbR2Ni2O8Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/bulb.t3whf7lxe2.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yTegh/Vwv51sgCAnRlUn3IpqQEepnT3f7NbR2Ni2O8Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Nov 2024 05:13:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t3whf7lxe2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/bulb.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yTegh/Vwv51sgCAnRlUn3IpqQEepnT3f7NbR2Ni2O8Y="
+        }
+      ]
+    },
+    {
       "Route": "images/users/esp32.jpg",
       "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\esp32.jpg",
       "Selectors": [],
@@ -5031,6 +5155,88 @@
       ]
     },
     {
+      "Route": "images/users/pump.5qp0xeg9jg.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PXu3AN0A2ipp+OCD1cg36fm2n3yePb0+uYUQEPQGFYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Nov 2024 05:29:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5qp0xeg9jg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/pump.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PXu3AN0A2ipp+OCD1cg36fm2n3yePb0+uYUQEPQGFYk="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/pump.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PXu3AN0A2ipp+OCD1cg36fm2n3yePb0+uYUQEPQGFYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Nov 2024 05:29:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PXu3AN0A2ipp+OCD1cg36fm2n3yePb0+uYUQEPQGFYk="
+        }
+      ]
+    },
+    {
       "Route": "images/users/QuangCao.png",
       "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao.png",
       "Selectors": [],
@@ -5053,7 +5259,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 13:10:27 GMT"
+          "Value": "Tue, 19 Nov 2024 02:26:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5090,7 +5296,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 17 Nov 2024 13:10:27 GMT"
+          "Value": "Tue, 19 Nov 2024 02:26:52 GMT"
         },
         {
           "Name": "Cache-Control",

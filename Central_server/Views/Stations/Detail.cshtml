@@ -5,15 +5,20 @@
     Layout = "_LayoutCustom";
 }
 
-<div>
-    <h3>Thông tin trạm</h3>
+<div style="text-align: right; margin-top: 20px;">
+    <a asp-controller="Scheduler" asp-action="Index" asp-route-id="@Model.StationId" class="btn btn-primary">Lập lịch cho các valve</a>
+</div>
+<div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px;">
+    <h3 style="color: #2e8b57;">Thông tin trạm</h3>
     <p><strong>Tên trạm:</strong> @Model.Location</p>
     <p><strong>Trạng thái:</strong> @(Model.Status.HasValue && Model.Status.Value ? "Hoạt động" : "Bị hỏng")</p>
 </div>
 
-<div>
+<div style="background-color: #f5f5dc; padding: 20px; border-radius: 10px; margin-top: 10px;">
     <p><strong>Nhiệt độ:</strong> @Model.Temperature °C</p>
     <p><strong>Độ ẩm:</strong> @Model.Humidity %</p>
 </div>
+
+
 
 @await Html.PartialAsync("ValveItem", Model)

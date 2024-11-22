@@ -6,16 +6,34 @@
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="rounded position-relative fruite-item">
                 <div class="fruite-img">
-                    <a asp-controller="Stations" asp-action="Detail" asp-route-id="@item.StationId">
-                        <img src="~/images/users/@item.ValveType" class="img-fluid w-100 rounded-top" alt="Valve">
-                    </a>
+                    <img src="~/images/users/@item.ValveType" class="img-fluid w-100 rounded-top" alt="Valve">
                 </div>
                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                    <a asp-controller="Stations" asp-action="Detail" asp-route-id="@item.StationId">
-                        <h5>Tên: @item.ValveName</h5>
-                    </a>
-                    <p>Trạng thái: @(item.Status == "on" ? "Bật" : "Tắt")</p>
+                    <h5>Tên: @item.ValveName</h5>
+
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0"> Trạng thái: @(item.Status == "on" ? "Bật" : "Tắt") </p>
+                        <a asp-controller="Stations" asp-action="ControlValve" asp-route-id="@item.ValveId" class="status-indicator ml-2 @(item.Status == "on" ? "on" : "off")"> </a>
+                    </div>
                 </div>
+
+                <style>
+                    .status-indicator {
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                        border-radius: 50%;
+                        display: inline-block;
+                    }
+
+                        .status-indicator.on {
+                            background-color: green;
+                        }
+
+                        .status-indicator.off {
+                            background-color: gray;
+                        }
+                </style>
             </div>
         </div>
     }

@@ -1,16 +1,18 @@
 ﻿@model List<Central_server.ViewModels.ValveVM>
+
 @{
     ViewData["Title"] = "Custom Valve Schedules";
     Layout = "_LayoutCustom";
 }
 
 <div class="container mt-5">
-    <h2 class="text-center">Create Schedule for Each Valve</h2>
-    <form asp-controller="Scheduler" asp-action="SubmitCustomSchedules" method="post">
+    <h2 class="text-center">Thêm lịch trình hoạt động cho các Valve</h2>
+    <form asp-controller="Scheduler" asp-action="AddSchedules" method="post">
         <div class="row">
             <div class="col-12">
-                @foreach (var valve in Model)
+                @for (int i = 0; i < Model.Count; i++)
                 {
+                    var valve = Model[i];
                     <div class="card mb-4">
                         <div class="card-header">
                             <h4 class="mb-0">
@@ -21,50 +23,29 @@
                             </h4>
                         </div>
                         <div class="card-body">
-                            <input type="hidden" name="Schedules[@valve.ValveId].ValveId" value="@valve.ValveId" />
+                            <input type="hidden" name="Schedules[@i].ValveId" value="@valve.ValveId" />
 
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="startTime-@valve.ValveId">Start Time:</label>
+                                        <label for="Schedules[@i].StartTime">Thời gian bắt đầu:</label>
                                         <input type="datetime-local"
                                                class="form-control"
-                                               id="startTime-@valve.ValveId"
-                                               name="Schedules[@valve.ValveId].StartTime"
+                                               id="Schedules[@i].StartTime"
+                                               name="Schedules[@i].StartTime"
                                                required />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="endTime-@valve.ValveId">End Time:</label>
+                                        <label for="Schedules[@i].EndTime">Thời gian kết thúc:</label>
                                         <input type="datetime-local"
                                                class="form-control"
-                                               id="endTime-@valve.ValveId"
-                                               name="Schedules[@valve.ValveId].EndTime"
+                                               id="Schedules[@i].EndTime"
+                                               name="Schedules[@i].EndTime"
                                                required />
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="frequency-@valve.ValveId">Frequency:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="frequency-@valve.ValveId"
-                                       name="Schedules[@valve.ValveId].Frequency"
-                                       placeholder="e.g., Daily, Weekly, etc."
-                                       required />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="status-@valve.ValveId">Status:</label>
-                                <select class="form-control"
-                                        id="status-@valve.ValveId"
-                                        name="Schedules[@valve.ValveId].Status"
-                                        required>
-                                    <option value="on">On</option>
-                                    <option value="off">Off</option>
-                                </select>
                             </div>
                         </div>
                     </div>
@@ -72,7 +53,7 @@
             </div>
         </div>
         <div class="text-center mt-4">
-            <button type="submit" class="btn btn-primary">Submit Schedules</button>
+            <button type="submit" class="btn btn-primary">Đăng ký lịch trình</button>
         </div>
     </form>
 </div>

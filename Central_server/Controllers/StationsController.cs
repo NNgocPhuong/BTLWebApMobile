@@ -60,8 +60,8 @@ namespace Central_server.Controllers
 
             return View(stationDetail);
         }
-        
-      
+
+
         public async Task<IActionResult> ControlValve(int? id)
         {
             if (id == null)
@@ -74,53 +74,33 @@ namespace Central_server.Controllers
             {
                 return NotFound();
             }
-            valve.Status = valve.Status == "on" ? "off" : "on";
-            _context.Update(valve);
-            await _context.SaveChangesAsync();
-            //var actionValue = valve.Status == "on" ? 2 : 3;
-            //var controlMessage = new
-            //{
-            //    action = "control",
-            //    value = new
-            //    {
-            //        valves = new[] { new[] { id, actionValue } }
-            //    }
-            //};
 
-            //var jsonMessage = JsonConvert.SerializeObject(controlMessage);
-            //var content = new StringContent(jsonMessage, Encoding.UTF8, "application/json");
+            var actionValue = valve.Status == "on" ? 2 : 3;
+            var controlMessage = new
+            {
+                action = "control",
+                value = new
+                {
+                    valves = new[] { new[] { id, actionValue } }
+                }
+            };
 
-            //using (var client = new HttpClient())
-            //{
-            //    var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
-            //    if (response.IsSuccessStatusCode)
-            //    {
-            //        var maxRetries = 10;
-            //        var delay = 1000; // 1 second
-            //        var retries = 0;
-            //        bool statusUpdated = false;
+            var jsonMessage = JsonConvert.SerializeObject(controlMessage);
+            var content = new StringContent(jsonMessage, Encoding.UTF8, "application/json");
 
-            //        while (retries < maxRetries && !statusUpdated)
-            //        {
-            //            await Task.Delay(delay);
-            //            retries++;
-
-            //            var responseContent = await response.Content.ReadAsStringAsync();
-            //            var responseObject = JsonConvert.DeserializeObject<dynamic>(responseContent);
-
-            //            if (responseObject != null && responseObject.value != null && responseObject.value.valves != null)
-            //            {
-            //                var valveStatus = responseObject.value.valves[0][1];
-            //                valve.Status = valveStatus == 3 ? "on" : "off";
-            //                _context.Update(valve);
-            //                await _context.SaveChangesAsync();
-            //                statusUpdated = true;
-            //            }
-            //        }
-            //    }
-            //}
+            using (var client = new HttpClient())
+            {
+                var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
+                if (response.IsSuccessStatusCode)
+                {
+                    valve.Status = actionValue == 3 ? "on" : "off";
+                    _context.Update(valve);
+                    await _context.SaveChangesAsync();
+                }
+            }
 
             return RedirectToAction(nameof(Detail), new { id = valve.StationId });
         }
+
     }
 }

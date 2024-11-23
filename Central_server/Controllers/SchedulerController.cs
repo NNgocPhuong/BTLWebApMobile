@@ -2,6 +2,8 @@
 using Central_server.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace Central_server.Controllers
 {
@@ -10,6 +12,7 @@ namespace Central_server.Controllers
         private readonly FarmTrackingContext _context;
 
         public SchedulerController(FarmTrackingContext context) { _context = context; }
+        
         public IActionResult Index(int? id)
         {
             if (id == null)
@@ -31,15 +34,76 @@ namespace Central_server.Controllers
                 Schedules = v.Schedules.Select(s => new SchedulerVM
                 {
                     ValveId = s.ValveId,
-                    ScheduleId = s.ScheduleId,
                     StartTime = s.StartTime,
                     EndTime = s.EndTime,
-                    Frequency = s.Frequency,
-                    Status = s.Status
                 }).ToList()
             }).ToList();
 
             return View(valveVM);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AddSchedules(ValveScheduleRequest request)
+        {
+            if (request == null || request.Schedules == null || !request.Schedules.Any())
+            {
+                return BadRequest("No schedules provided");
+            }
+
+            if (ModelState.IsValid)
+            {
+                var schedules = request.Schedules.Select((s, index) => new object[]
+                {
+            index + 1, // Valve sequence number
+            ConvertToCustomDateTimeFormat(s.StartTime),
+            ConvertToCustomDateTimeFormat(s.EndTime)
+                }).ToArray();
+
+                var controlMessage = new
+                {
+                    action = "schedule",
+                    value = new
+                    {
+                        valves = schedules
+                    }
+                };
+
+                var jsonMessage = JsonConvert.SerializeObject(controlMessage);
+                var content = new StringContent(jsonMessage, Encoding.UTF8, "application/json");
+
+                using (var client = new HttpClient())
+                {
+                    var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
+                    if (response.StatusCode == System.Net.HttpStatusCode.Created)
+                    {
+                        // Optionally, save the schedules to the database
+                        foreach (var schedule in request.Schedules)
+                        {
+                            var newSchedule = new Schedule
+                            {
+                                ValveId = schedule.ValveId,
+                                StartTime = schedule.StartTime,
+                                EndTime = schedule.EndTime,
+                                Frequency = "Once", // Example frequency, adjust as needed
+                                Status = "Scheduled",
+                                CreatedAt = DateTime.Now
+                            };
+                            _context.Schedules.Add(newSchedule);
+                        }
+                        await _context.SaveChangesAsync();
+                    }
+                }
+
+                return RedirectToAction("Index", "Stations");
+            }
+
+            return View("Index");
+        }
+
+        private string ConvertToCustomDateTimeFormat(DateTime dateTime)
+        {
+            return dateTime.ToString("yyMMddHHmm");
+        }
+
     }
 }

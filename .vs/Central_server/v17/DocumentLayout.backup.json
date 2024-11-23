@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\CodeProjectMini\\Central_server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\schedulercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\schedulercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\services\\stationdatafetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\services\\stationdatafetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\schedulercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\schedulercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\data\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\data\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\viewmodels\\schedulervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\viewmodels\\schedulervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\viewmodels\\valvevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\viewmodels\\valvevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\services\\stationdatafetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\services\\stationdatafetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\data\\valf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,24 +39,8 @@
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\stations\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\data\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\data\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\stations\\valveitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\stations\\valveitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\viewmodels\\schedulervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\viewmodels\\schedulervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\viewmodels\\valvevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\viewmodels\\valvevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\stations\\stationitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,58 +86,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SchedulerController.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\SchedulerController.cs",
               "RelativeDocumentMoniker": "Central_server\\Controllers\\SchedulerController.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\SchedulerController.cs",
               "RelativeToolTip": "Central_server\\Controllers\\SchedulerController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwAkAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T01:45:56.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Scheduler\\Index.cshtml",
               "RelativeDocumentMoniker": "Central_server\\Views\\Scheduler\\Index.cshtml",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Scheduler\\Index.cshtml",
               "RelativeToolTip": "Central_server\\Views\\Scheduler\\Index.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAcwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-22T02:38:57.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Schedule.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Data\\Schedule.cs",
               "RelativeDocumentMoniker": "Central_server\\Data\\Schedule.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Data\\Schedule.cs",
               "RelativeToolTip": "Central_server\\Data\\Schedule.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA/wBMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T01:49:18.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T01:49:18.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "ValveVM.cs",
+              "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\ViewModels\\ValveVM.cs",
+              "RelativeDocumentMoniker": "Central_server\\ViewModels\\ValveVM.cs",
+              "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\ViewModels\\ValveVM.cs",
+              "RelativeToolTip": "Central_server\\ViewModels\\ValveVM.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBAAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T07:33:19.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SchedulerVM.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\ViewModels\\SchedulerVM.cs",
               "RelativeDocumentMoniker": "Central_server\\ViewModels\\SchedulerVM.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\ViewModels\\SchedulerVM.cs",
               "RelativeToolTip": "Central_server\\ViewModels\\SchedulerVM.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T01:49:04.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ValveItem.cshtml",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Stations\\ValveItem.cshtml",
               "RelativeDocumentMoniker": "Central_server\\Views\\Stations\\ValveItem.cshtml",
@@ -161,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Stations\\Detail.cshtml",
               "RelativeDocumentMoniker": "Central_server\\Views\\Stations\\Detail.cshtml",
@@ -169,20 +180,7 @@
               "RelativeToolTip": "Central_server\\Views\\Stations\\Detail.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T04:16:10.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ValveVM.cs",
-              "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\ViewModels\\ValveVM.cs",
-              "RelativeDocumentMoniker": "Central_server\\ViewModels\\ValveVM.cs",
-              "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\ViewModels\\ValveVM.cs",
-              "RelativeToolTip": "Central_server\\ViewModels\\ValveVM.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBAAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T07:33:19.214Z"
+              "WhenOpened": "2024-11-21T04:16:10.871Z"
             },
             {
               "$type": "Document",
@@ -198,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Valf.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Data\\Valf.cs",
               "RelativeDocumentMoniker": "Central_server\\Data\\Valf.cs",
@@ -206,8 +204,7 @@
               "RelativeToolTip": "Central_server\\Data\\Valf.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T03:59:34.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T03:59:34.31Z"
             },
             {
               "$type": "Document",
@@ -223,20 +220,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StationsController.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\StationsController.cs",
               "RelativeDocumentMoniker": "Central_server\\Controllers\\StationsController.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\StationsController.cs",
               "RelativeToolTip": "Central_server\\Controllers\\StationsController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwEwAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T14:21:57.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "StationDataFetcher.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Services\\StationDataFetcher.cs",
               "RelativeDocumentMoniker": "Central_server\\Services\\StationDataFetcher.cs",
@@ -244,8 +241,7 @@
               "RelativeToolTip": "Central_server\\Services\\StationDataFetcher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T15:35:18.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T15:35:18.205Z"
             }
           ]
         }

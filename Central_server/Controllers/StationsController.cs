@@ -61,7 +61,7 @@ namespace Central_server.Controllers
             return View(stationDetail);
         }
 
-
+        [Authorize]
         public async Task<IActionResult> ControlValve(int? id)
         {
             if (id == null)

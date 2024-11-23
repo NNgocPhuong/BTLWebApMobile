@@ -1,5 +1,6 @@
 ﻿using Central_server.Data;
 using Central_server.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -12,7 +13,7 @@ namespace Central_server.Controllers
         private readonly FarmTrackingContext _context;
 
         public SchedulerController(FarmTrackingContext context) { _context = context; }
-        
+        [Authorize]
         public IActionResult Index(int? id)
         {
             if (id == null)
@@ -41,7 +42,7 @@ namespace Central_server.Controllers
 
             return View(valveVM);
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> AddSchedules(ValveScheduleRequest request)
         {
@@ -49,10 +50,19 @@ namespace Central_server.Controllers
             {
                 return BadRequest("No schedules provided");
             }
+            // Lọc các lịch trình hợp lệ (có đủ dữ liệu StartTime và EndTime)
+            var validSchedules = request.Schedules
+                .Where(s => s.StartTime != DateTime.MinValue && s.EndTime != DateTime.MinValue)
+                .ToList();
+
+            if (!validSchedules.Any())
+            {
+                return BadRequest("No valid schedules provided");
+            }
 
             if (ModelState.IsValid)
             {
-                var schedules = request.Schedules.Select((s, index) => new object[]
+                var schedules = validSchedules.Select((s, index) => new object[]
                 {
             index + 1, // Valve sequence number
             ConvertToCustomDateTimeFormat(s.StartTime),

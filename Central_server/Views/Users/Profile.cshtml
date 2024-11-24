@@ -3,13 +3,17 @@
     ViewData["Title"] = "Profile";
 }
 <div class="profile-container">
-    <h2>Welcome @Model.FullName</h2>
+    <div class="profile-header">
+        <img src="~/images/users/@Model.PhotoUrl" class="profile-picture" alt="@Model.FullName">
+        <h2 class="profile-name">Chào mừng, @Model.FullName!</h2>
+    </div>
     <div class="profile-details">
-        <h3>Profile Details</h3>
-        <p><strong>Họ và tên:</strong> @Model.FullName</p>
-        <p><strong>Mã số sinh viên:</strong> @Model.StudentId</p>
-        <p><strong>Tên đăng nhập:</strong> @Model.UserName</p>
-        <img src="~/images/users/@Model.PhotoUrl" class="img-fluid rounded" alt="@Model.FullName">
+        <h3 class="section-title">Thông tin cá nhân</h3>
+        <ul class="details-list">
+            <li><strong>Họ và tên:</strong> @Model.FullName</li>
+            <li><strong>Mã số sinh viên:</strong> @Model.StudentId</li>
+            <li><strong>Tên đăng nhập:</strong> @Model.UserName</li>
+        </ul>
     </div>
     <div class="profile-actions">
         <a asp-controller="Users" asp-action="Edit" asp-route-id="@Model.UserId" class="btn btn-primary">Chỉnh sửa thông tin</a>
@@ -18,24 +22,99 @@
 </div>
 
 <style>
+    /* Tổng quan */
     .profile-container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        background-color: #f9f9f9;
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+        font-family: 'Arial', sans-serif;
     }
-    .profile-details {
-        margin-bottom: 20px;
-    }
-    .profile-details p {
-        margin: 5px 0;
-    }
-    .profile-actions {
+
+    /* Header */
+    .profile-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
         text-align: center;
     }
-    .profile-actions .btn {
-        margin: 5px;
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        border: 2px solid #ccc;
     }
+
+    .profile-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        flex: 1;
+    }
+
+    /* Chi tiết cá nhân */
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #555;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .details-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .details-list li {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .details-list strong {
+            color: #333;
+        }
+
+    /* Nút hành động */
+    .profile-actions {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+        .profile-actions .btn {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #a71d2a;
+        }
 </style>

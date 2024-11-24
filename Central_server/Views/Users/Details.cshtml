@@ -1,39 +1,56 @@
 ﻿@model Central_server.ViewModels.UserVM
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Thông tin chi tiết";
 }
 
-<h1>Thông tin chi tiết</h1>
-
-<!-- Single Product Start -->
-<div class="container-fluid py-5 mt-5">
-    <div class="container py-5">
-        <div class="row g-4 mb-5">
-            <div class="col-lg-8 col-xl-9">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="border rounded">
-                            <a asp-controller="Users" asp-action="Detail" asp-route-id ="@Model.UserId">
-                                <img src="~/images/users/@Model.PhotoUrl" class="img-fluid rounded" alt="@Model.FullName">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4 class="fw-bold mb-3">@Model.FullName</h4>
-                        <p class="mb-3">Mã số sinh viên: @Model.StudentId</p>
-                    </div>
+<div class="container py-5">
+    <div class="card shadow-lg border-0 rounded">
+        <div class="row g-0">
+            <!-- Ảnh đại diện -->
+            <div class="col-md-4 text-center bg-light d-flex align-items-center justify-content-center">
+                <img src="~/images/users/@Model.PhotoUrl"
+                     alt="@Model.FullName"
+                     class="img-fluid rounded-circle shadow"
+                     style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <!-- Thông tin chi tiết -->
+            <div class="col-md-8">
+                <div class="card-body p-4">
+                    <h3 class="card-title text-success">@Model.FullName</h3>
+                    <p class="card-text">
+                        <strong>Mã số sinh viên:</strong> @Model.StudentId
+                    </p>
                 </div>
             </div>
- 
         </div>
-        
+    </div>
+
+    <!-- Nút hành động -->
+    <div class="text-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.UserId" class="btn btn-warning me-2">
+            <i class="bi bi-pencil"></i> Chỉnh sửa
+        </a>
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left-circle"></i> Quay lại danh sách
+        </a>
     </div>
 </div>
-<!-- Single Product End -->
 
+<style>
+    .card-title {
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
 
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.UserId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    .card-text {
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+    .btn i {
+        margin-right: 5px;
+    }
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

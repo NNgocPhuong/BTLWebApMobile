@@ -64,9 +64,9 @@ namespace Central_server.Controllers
             {
                 var schedules = validSchedules.Select((s, index) => new object[]
                 {
-            index + 1, // Valve sequence number
-            ConvertToCustomDateTimeFormat(s.StartTime),
-            ConvertToCustomDateTimeFormat(s.EndTime)
+                    index + 1, // Valve sequence number
+                    ConvertToCustomDateTimeFormat(s.StartTime),
+                    ConvertToCustomDateTimeFormat(s.EndTime)
                 }).ToArray();
 
                 var controlMessage = new

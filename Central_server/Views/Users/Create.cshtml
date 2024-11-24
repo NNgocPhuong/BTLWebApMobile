@@ -1,60 +1,82 @@
 ﻿@model Central_server.ViewModels.UserVM
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Thêm thành viên";
 }
 
-<h1>Thêm thành viên</h1>
+<div class="container py-5">
+    <h1 class="text-center text-success mb-4">Thêm thành viên mới</h1>
+    <hr class="mb-5" />
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="@Model.UserName" class="control-label"></label>
-                <input asp-for="@Model.UserName" class="form-control" />
-                <span asp-validation-for="@Model.UserName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="@Model.Password" class="control-label"></label>
-                <input asp-for="@Model.Password" class="form-control" type="password" id="Password" />
-                <span asp-validation-for="@Model.Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label for="ConfirmPassword" class="control-label">Nhập lại mật khẩu</label>
-                <input type="password" class="form-control" id="ConfirmPassword" />
-                <span id="confirmPasswordError" class="text-danger"></span>
-            </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <form asp-action="Create" enctype="multipart/form-data" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none" role="alert"></div>
 
-            <div class="form-group">
-                <label asp-for="@Model.FullName" class="control-label"></label>
-                <input asp-for="@Model.FullName" class="form-control" />
-                <span asp-validation-for="@Model.FullName" class="text-danger"></span>
+                        <!-- Tên đăng nhập -->
+                        <div class="mb-3">
+                            <label asp-for="@Model.UserName" class="form-label fw-bold">Tên đăng nhập</label>
+                            <input asp-for="@Model.UserName" class="form-control" />
+                            <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Mật khẩu -->
+                        <div class="mb-3">
+                            <label asp-for="@Model.Password" class="form-label fw-bold">Mật khẩu</label>
+                            <input asp-for="@Model.Password" class="form-control" type="password" id="Password" />
+                            <span asp-validation-for="@Model.Password" class="text-danger"></span>
+                        </div>
+
+                        <!-- Xác nhận mật khẩu -->
+                        <div class="mb-3">
+                            <label for="ConfirmPassword" class="form-label fw-bold">Nhập lại mật khẩu</label>
+                            <input type="password" class="form-control" id="ConfirmPassword" />
+                            <span id="confirmPasswordError" class="text-danger"></span>
+                        </div>
+
+                        <!-- Họ tên -->
+                        <div class="mb-3">
+                            <label asp-for="@Model.FullName" class="form-label fw-bold">Họ và tên</label>
+                            <input asp-for="@Model.FullName" class="form-control" />
+                            <span asp-validation-for="@Model.FullName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Mã số sinh viên -->
+                        <div class="mb-3">
+                            <label asp-for="@Model.StudentId" class="form-label fw-bold">Mã số sinh viên</label>
+                            <input asp-for="@Model.StudentId" class="form-control" />
+                            <span asp-validation-for="@Model.StudentId" class="text-danger"></span>
+                        </div>
+
+                        <!-- Ảnh đại diện -->
+                        <div class="mb-3">
+                            <label asp-for="@Model.Photo" class="form-label fw-bold">Ảnh đại diện</label>
+                            <input type="file" asp-for="@Model.Photo" class="form-control" />
+                            <span asp-validation-for="@Model.Photo" class="text-danger"></span>
+                        </div>
+
+                        <!-- Nút hành động -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-4 me-2">
+                                <i class="bi bi-person-plus"></i> Thêm
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary px-4">
+                                <i class="bi bi-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="@Model.StudentId" class="control-label"></label>
-                <input asp-for="@Model.StudentId" class="form-control" />
-                <span asp-validation-for="@Model.StudentId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="@Model.Photo" class="control-label"></label>
-                <input type="file" asp-for="@Model.Photo" class="form-control" />
-                <span asp-validation-for="@Model.Photo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
 <script>
     document.getElementById('ConfirmPassword').addEventListener('input', function () {
@@ -69,3 +91,5 @@
         }
     });
 </script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

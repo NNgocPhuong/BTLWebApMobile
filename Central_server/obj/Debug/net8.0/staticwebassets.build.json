@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Px/7VMUwUe5+qSXof0VZycPuodCEzWEUv7/W4KJQCkA=",
+  "Hash": "4osXAQGz7wv/H66vtTFeaqaPn0UjmYdINRpI9S7wHzQ=",
   "Source": "Central_server",
   "BasePath": "_content/Central_server",
   "Mode": "Default",
@@ -248,6 +248,27 @@
       "OriginalItemSpec": "wwwroot\\images\\users\\bulb.jpg"
     },
     {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Dang.jpg",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/Dang#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aiqi1eml1c",
+      "Integrity": "TnC84coD5RXxjG7QNz+H11GK2B7Ozge2bm75xFdrZPI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\Dang.jpg"
+    },
+    {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\esp32.jpg",
       "SourceId": "Central_server",
       "SourceType": "Discovered",
@@ -267,6 +288,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\esp32.jpg"
+    },
+    {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\IMG_4357.jpeg",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/IMG_4357#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ilpjkjicxm",
+      "Integrity": "VugLsKTCm0cGvf7LZenqp6Qf5YwBoGKY9cSZaWR401I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\IMG_4357.jpeg"
     },
     {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Lai1.png",
@@ -332,6 +374,27 @@
       "OriginalItemSpec": "wwwroot\\images\\users\\Lai4.png"
     },
     {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Linh.jpg",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/Linh#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5jy1sklp3n",
+      "Integrity": "EWGT5jG8NENDcGhwm0Kt+sR11/YCX8ZK32RGxxX6XNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\Linh.jpg"
+    },
+    {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
       "SourceId": "Central_server",
       "SourceType": "Discovered",
@@ -351,6 +414,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\pump.jpg"
+    },
+    {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Phuong.jpg",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/Phuong#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w8zaeb4eb5",
+      "Integrity": "EJWJ0L0Pr2WeGtUK27LJslkIzDUbT0xA6tQ6d4NhZP8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\Phuong.jpg"
     },
     {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao.png",
@@ -435,6 +519,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png"
+    },
+    {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Thinh.jpg",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/Thinh#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "epsjge4wma",
+      "Integrity": "EmDvXMldPJs4NfiWcDD0coHE6mcxayaJrYdiVGe+j3o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\Thinh.jpg"
     },
     {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\index.html",
@@ -4827,6 +4932,88 @@
       ]
     },
     {
+      "Route": "images/users/Dang.aiqi1eml1c.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Dang.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TnC84coD5RXxjG7QNz+H11GK2B7Ozge2bm75xFdrZPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 09:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aiqi1eml1c"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/Dang.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TnC84coD5RXxjG7QNz+H11GK2B7Ozge2bm75xFdrZPI="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Dang.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Dang.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TnC84coD5RXxjG7QNz+H11GK2B7Ozge2bm75xFdrZPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 09:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TnC84coD5RXxjG7QNz+H11GK2B7Ozge2bm75xFdrZPI="
+        }
+      ]
+    },
+    {
       "Route": "images/users/esp32.jpg",
       "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\esp32.jpg",
       "Selectors": [],
@@ -4905,6 +5092,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Shgwa9DbTdUe+kB6MCBmG2epWPPoxLamfD00r1oxeTg="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/IMG_4357.ilpjkjicxm.jpeg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\IMG_4357.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "823181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VugLsKTCm0cGvf7LZenqp6Qf5YwBoGKY9cSZaWR401I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 10:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilpjkjicxm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/IMG_4357.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VugLsKTCm0cGvf7LZenqp6Qf5YwBoGKY9cSZaWR401I="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/IMG_4357.jpeg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\IMG_4357.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "823181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VugLsKTCm0cGvf7LZenqp6Qf5YwBoGKY9cSZaWR401I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 10:36:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VugLsKTCm0cGvf7LZenqp6Qf5YwBoGKY9cSZaWR401I="
         }
       ]
     },
@@ -5155,6 +5424,88 @@
       ]
     },
     {
+      "Route": "images/users/Linh.5jy1sklp3n.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Linh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "338021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EWGT5jG8NENDcGhwm0Kt+sR11/YCX8ZK32RGxxX6XNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 09:34:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5jy1sklp3n"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/Linh.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWGT5jG8NENDcGhwm0Kt+sR11/YCX8ZK32RGxxX6XNw="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Linh.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Linh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "338021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EWGT5jG8NENDcGhwm0Kt+sR11/YCX8ZK32RGxxX6XNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 09:34:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EWGT5jG8NENDcGhwm0Kt+sR11/YCX8ZK32RGxxX6XNw="
+        }
+      ]
+    },
+    {
       "Route": "images/users/pump.5qp0xeg9jg.jpg",
       "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
       "Selectors": [],
@@ -5233,6 +5584,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-PXu3AN0A2ipp+OCD1cg36fm2n3yePb0+uYUQEPQGFYk="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Phuong.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Phuong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "917826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EJWJ0L0Pr2WeGtUK27LJslkIzDUbT0xA6tQ6d4NhZP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 10:50:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EJWJ0L0Pr2WeGtUK27LJslkIzDUbT0xA6tQ6d4NhZP8="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Phuong.w8zaeb4eb5.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Phuong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "917826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EJWJ0L0Pr2WeGtUK27LJslkIzDUbT0xA6tQ6d4NhZP8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 10:50:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w8zaeb4eb5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/Phuong.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EJWJ0L0Pr2WeGtUK27LJslkIzDUbT0xA6tQ6d4NhZP8="
         }
       ]
     },
@@ -5561,6 +5994,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-EidkPFMFub3IBw16Kd2SmFSs83/rkO6UomM1SUorTmo="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Thinh.epsjge4wma.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Thinh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "420429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EmDvXMldPJs4NfiWcDD0coHE6mcxayaJrYdiVGe+j3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 10:45:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "epsjge4wma"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/Thinh.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EmDvXMldPJs4NfiWcDD0coHE6mcxayaJrYdiVGe+j3o="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Thinh.jpg",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Thinh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "420429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EmDvXMldPJs4NfiWcDD0coHE6mcxayaJrYdiVGe+j3o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Nov 2024 10:45:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EmDvXMldPJs4NfiWcDD0coHE6mcxayaJrYdiVGe+j3o="
         }
       ]
     },

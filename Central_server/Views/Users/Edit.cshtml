@@ -1,48 +1,69 @@
 ﻿@model Central_server.ViewModels.EditVM
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Chỉnh sửa thông tin thành viên";
 }
 
-<h1>Chỉnh sửa thông tin thành viên</h1>
+<div class="container py-5">
+    <h1 class="text-center text-primary mb-4">Chỉnh sửa thông tin thành viên</h1>
+    <hr class="mb-5" />
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="UserId" />
-            <div class="form-group">
-                <label asp-for="@Model.UserName" class="control-label"></label>
-                <input asp-for="@Model.UserName" class="form-control" />
-                <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger d-none" role="alert"></div>
+                        <input type="hidden" asp-for="UserId" />
+
+                        <!-- Tên đăng nhập -->
+                        <div class="mb-3">
+                            <label asp-for="UserName" class="form-label fw-bold">Tên đăng nhập</label>
+                            <input asp-for="UserName" class="form-control" />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Họ tên -->
+                        <div class="mb-3">
+                            <label asp-for="FullName" class="form-label fw-bold">Họ và tên</label>
+                            <input asp-for="FullName" class="form-control" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Mã số sinh viên -->
+                        <div class="mb-3">
+                            <label asp-for="StudentId" class="form-label fw-bold">Mã số sinh viên</label>
+                            <input asp-for="StudentId" class="form-control" />
+                            <span asp-validation-for="StudentId" class="text-danger"></span>
+                        </div>
+
+                        <!-- Ảnh đại diện -->
+                        <div class="mb-3">
+                            <label asp-for="PhotoUrl" class="form-label fw-bold">Ảnh đại diện (URL)</label>
+                            <input asp-for="PhotoUrl" class="form-control" />
+                            <span asp-validation-for="PhotoUrl" class="text-danger"></span>
+                        </div>
+
+                        <!-- Nút hành động -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success px-4 me-2">
+                                <i class="bi bi-save"></i> Lưu thay đổi
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary px-4">
+                                <i class="bi bi-arrow-left"></i> Quay lại
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
-                <span asp-validation-for="FullName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StudentId" class="control-label"></label>
-                <input asp-for="StudentId" class="form-control" />
-                <span asp-validation-for="StudentId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhotoUrl" class="control-label"></label>
-                <input asp-for="PhotoUrl" class="form-control" />
-                <span asp-validation-for="PhotoUrl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

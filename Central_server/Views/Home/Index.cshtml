@@ -1,11 +1,82 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Chào mừng tới với nhóm 1</h1>
-    <p class="lead">Chúng tôi rất vui mừng được chào đón bạn!</p>
-    <hr class="my-4">
-    <p>Nhóm 1 luôn nỗ lực để mang đến những sản phẩm tốt nhất.</p>
-    <a class="btn btn-primary btn-lg" asp-controller="Stations" asp-action="Index" role="button">Tìm hiểu thêm</a>
+﻿<div class="welcome-container">
+    <div class="text-center">
+        <h1 class="display-4 welcome-heading">Chào mừng tới với nhóm 1</h1>
+        <p class="lead welcome-subheading">Chúng tôi rất vui mừng được chào đón bạn!</p>
+        <hr class="my-4 welcome-divider">
+        <p class="welcome-message">Nhóm 1 luôn nỗ lực để mang đến những sản phẩm tốt nhất.</p>
+        <a class="btn btn-success btn-lg welcome-button" asp-controller="Stations" asp-action="Index" role="button">
+            Tìm hiểu thêm
+        </a>
+    </div>
 </div>
+
+<style>
+    /* Container Styles */
+    .welcome-container {
+        background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9); /* Màu xanh nhạt nhẹ nhàng */
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+        animation: fadeInEffect 2s ease;
+    }
+
+    /* Heading Styles */
+    .welcome-heading {
+        font-size: 2.5rem;
+        color: #4caf50; /* Màu xanh lá cây đậm nhấn mạnh */
+        margin-bottom: 20px;
+    }
+
+    /* Subheading and Divider */
+    .welcome-subheading {
+        font-size: 1.2rem;
+        color: #66bb6a; /* Màu xanh nhạt hơn */
+        margin-bottom: 10px;
+    }
+
+    .welcome-divider {
+        border: 1px solid #81c784;
+        margin: 20px auto;
+        width: 50%;
+    }
+
+    /* Message and Button */
+    .welcome-message {
+        font-size: 1rem;
+        color: #2e7d32; /* Màu xanh đậm hơn để làm nổi bật */
+        margin-bottom: 20px;
+    }
+
+    .welcome-button {
+        background-color: #4caf50; /* Màu xanh chính */
+        color: white;
+        border: none;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+        .welcome-button:hover {
+            background-color: #388e3c; /* Tông xanh đậm hơn khi hover */
+            transform: scale(1.1);
+        }
+
+    /* Fade-in Effect (Implemented Directly) */
+    .welcome-container {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+        .welcome-container.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+</style>
+
+<script>
+    // Add fade-in effect using JavaScript
+    document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector('.welcome-container');
+        container.classList.add('show');
+    });
+</script>

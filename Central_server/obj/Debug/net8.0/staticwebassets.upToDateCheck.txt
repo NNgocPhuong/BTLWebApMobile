@@ -7,15 +7,20 @@ wwwroot\css\style.css
 wwwroot\chackout.html
 wwwroot\favicon.ico
 wwwroot\images\users\bulb.jpg
+wwwroot\images\users\Dang.jpg
 wwwroot\images\users\esp32.jpg
+wwwroot\images\users\IMG_4357.jpeg
 wwwroot\images\users\Lai1.png
 wwwroot\images\users\Lai3.png
 wwwroot\images\users\Lai4.png
+wwwroot\images\users\Linh.jpg
 wwwroot\images\users\pump.jpg
+wwwroot\images\users\Phuong.jpg
 wwwroot\images\users\QuangCao.png
 wwwroot\images\users\QuangCao2.png
 wwwroot\images\users\QuangCao3.png
 wwwroot\images\users\sử dụng add transient,scope,singleton.png
+wwwroot\images\users\Thinh.jpg
 wwwroot\index.html
 wwwroot\js\main.js
 wwwroot\js\site.js

@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Dang.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\Dang.jpg"
+    },
+    {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\IMG_4357.jpeg",
+      "PackagePath": "staticwebassets\\images\\users\\IMG_4357.jpeg"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Lai1.png",
       "PackagePath": "staticwebassets\\images\\users\\Lai1.png"
     },
@@ -49,6 +57,14 @@
       "PackagePath": "staticwebassets\\images\\users\\Lai4.png"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Linh.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\Linh.jpg"
+    },
+    {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Phuong.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\Phuong.jpg"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao.png",
       "PackagePath": "staticwebassets\\images\\users\\QuangCao.png"
     },
@@ -59,6 +75,10 @@
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao3.png",
       "PackagePath": "staticwebassets\\images\\users\\QuangCao3.png"
+    },
+    {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Thinh.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\Thinh.jpg"
     },
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",

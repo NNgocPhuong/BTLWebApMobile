@@ -17,8 +17,8 @@
                         <div class="card-header">
                             <h4 class="mb-0">
                                 @valve.ValveName
-                                <span class="badge @(valve.Status == "on" ? "badge-success" : "badge-secondary")">
-                                    @(valve.Status == "on" ? "On" : "Off")
+                                <span class="badge @(valve.Status == "1" ? "badge-success" : "badge-secondary")">
+                                    @(valve.Status == "1" ? "On" : "Off")
                                 </span>
                             </h4>
                         </div>

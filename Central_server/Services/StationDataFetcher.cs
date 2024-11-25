@@ -1,5 +1,6 @@
 ﻿using Central_server.Data;
 using Central_server.ViewModels;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Text;
 
@@ -17,7 +18,7 @@ namespace Central_server.Services
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
+            _timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(30));
             return Task.CompletedTask;
         }
 
@@ -26,36 +27,90 @@ namespace Central_server.Services
             using (var scope = _serviceProvider.CreateScope())
             {
                 var context = scope.ServiceProvider.GetRequiredService<FarmTrackingContext>();
-                var client = new HttpClient();
+                var client = new HttpClient
+                {
+                    Timeout = TimeSpan.FromMinutes(5) // Increase the timeout to 5 minutes
+                };
                 var requestBody = new
                 {
                     action = "get_infor",
                     value = new { }
                 };
                 var content = new StringContent(JsonConvert.SerializeObject(requestBody), Encoding.UTF8, "application/json");
-                var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
 
-                if (response.IsSuccessStatusCode)
+                try
                 {
-                    var responseData = await response.Content.ReadAsStringAsync();
-                    var stationData = JsonConvert.DeserializeObject<getInforVM>(responseData);
+                    var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
 
-                    // Save the data to the database
-                    var station = await context.Stations.FindAsync(1);
-                    if (station != null)
+                    if (response.IsSuccessStatusCode)
                     {
-                        station.SensorsData.Add(new SensorsDatum
+                        var responseData = await response.Content.ReadAsStringAsync();
+                        var stationData = JsonConvert.DeserializeObject<getInforVM>(responseData);
+
+                        // Save the data to the database
+                        var station = await context.Stations.FindAsync(1);
+                        if (station != null)
                         {
-                            Temperature = stationData.Temperature,
-                            Humidity = stationData.Humidity,
-                            Timestamp = DateTime.Now
-                        });
-                        context.Stations.Update(station);
-                        await context.SaveChangesAsync();
+                            // Update sensor data
+                            station.SensorsData.Add(new SensorsDatum
+                            {
+                                Temperature = stationData.Temperature,
+                                Humidity = stationData.Humidity,
+                                Timestamp = DateTime.Now
+                            });
+
+                            // Get the list of valves from the database
+                            var valves = await context.Valves.Where(v => v.StationId == station.StationId).ToListAsync();
+
+                            // Update valve data
+                            for (int i = 0; i < stationData.Valves.Count; i++)
+                            {
+                                var apiValve = stationData.Valves[i];
+                                var dbValve = valves.ElementAtOrDefault(i);
+
+                                if (dbValve == null)
+                                {
+                                    // Add new valve
+                                    dbValve = new Valf
+                                    {
+                                        StationId = station.StationId,
+                                        ValveName = $"Valve {i + 1}", // Assign a default name
+                                        ValveType = "pump", // Assign a default type
+                                        Status = apiValve.Status,
+                                        LastUpdated = DateTime.Now
+                                    };
+                                    context.Valves.Add(dbValve);
+                                }
+                                else
+                                {
+                                    // Update existing valve
+                                    dbValve.Status = apiValve.Status;
+                                    dbValve.LastUpdated = DateTime.Now;
+                                    context.Valves.Update(dbValve);
+                                }
+                            }
+
+                            context.Stations.Update(station);
+                            await context.SaveChangesAsync();
+                        }
                     }
+                }
+                catch (TaskCanceledException ex)
+                {
+                    // Handle the timeout exception
+                    Console.WriteLine($"Request timed out: {ex.Message}");
+                }
+                catch (Exception ex)
+                {
+                    // Handle other exceptions
+                    Console.WriteLine($"An error occurred: {ex.Message}");
                 }
             }
         }
+
+
+
+
 
         public Task StopAsync(CancellationToken cancellationToken)
         {

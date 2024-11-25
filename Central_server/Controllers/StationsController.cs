@@ -75,13 +75,14 @@ namespace Central_server.Controllers
                 return NotFound();
             }
 
-            var actionValue = valve.Status == "on" ? 2 : 3;
+            var actionValue = valve.Status == "1" ? 2 : 3;
+            var valveId = int.Parse(valve.ValveName.Split(' ').Last());
             var controlMessage = new
             {
                 action = "control",
                 value = new
                 {
-                    valves = new[] { new[] { id, actionValue } }
+                    valves = new[] { new[] { valveId, actionValue } }
                 }
             };
 
@@ -93,7 +94,7 @@ namespace Central_server.Controllers
                 var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
                 if (response.IsSuccessStatusCode)
                 {
-                    valve.Status = actionValue == 3 ? "on" : "off";
+                    valve.Status = actionValue == 3 ? "1" : "0";
                     _context.Update(valve);
                     await _context.SaveChangesAsync();
                 }

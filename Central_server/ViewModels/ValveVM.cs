@@ -8,7 +8,7 @@ namespace Central_server.ViewModels
         public int ValveId { get; set; }
         [Required]
         [Display(Name = "Tên van")]
-        public string ValveName { get; set; }
+        public string ValveName { get; set; } = null!;
         [Required]
         [Display(Name = "Trạng thái")]
         public string Status { get; set; }

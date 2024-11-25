@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\custom_css\\style.css",
+      "PackagePath": "staticwebassets\\custom_css\\style.css"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -65,6 +69,10 @@
       "PackagePath": "staticwebassets\\images\\users\\Phuong.jpg"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Phuong.png",
+      "PackagePath": "staticwebassets\\images\\users\\Phuong.png"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao.png",
       "PackagePath": "staticwebassets\\images\\users\\QuangCao.png"
     },
@@ -95,6 +103,10 @@
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png",
       "PackagePath": "staticwebassets\\images\\users\\sử dụng add transient,scope,singleton.png"
+    },
+    {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\img\\icon.png",
+      "PackagePath": "staticwebassets\\img\\icon.png"
     },
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\index.html",

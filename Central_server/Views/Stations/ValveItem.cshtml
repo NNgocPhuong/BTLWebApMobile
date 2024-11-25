@@ -6,14 +6,14 @@
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="rounded position-relative fruite-item">
                 <div class="fruite-img">
-                    <img src="~/images/users/@item.ValveType" class="img-fluid w-100 rounded-top" alt="Valve">
+                    <img src="~/images/users/pump.jpg" class="img-fluid w-100 rounded-top" alt="Valve">
                 </div>
                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                     <h5>Tên: @item.ValveName</h5>
 
                     <div class="d-flex align-items-center">
-                        <p class="mb-0"> Trạng thái: @(item.Status == "on" ? "Bật" : "Tắt") </p>
-                        <a asp-controller="Stations" asp-action="ControlValve" asp-route-id="@item.ValveId" class="status-indicator ml-2 @(item.Status == "on" ? "on" : "off")"> </a>
+                        <p class="mb-0"> Trạng thái: @(item.Status == "1" ? "Bật" : "Tắt") </p>
+                        <a asp-controller="Stations" asp-action="ControlValve" asp-route-id="@item.ValveId" class="status-indicator ml-2 @(item.Status == "1" ? "on" : "off")"> </a>
                     </div>
                 </div>
 

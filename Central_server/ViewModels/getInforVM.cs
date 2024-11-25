@@ -11,9 +11,7 @@ namespace Central_server.ViewModels
         [Display(Name = "Độ ẩm")]
         public double Humidity { get; set; }
 
-        //[Display(Name = "Trạng thái van")]
-        //public bool ValveState { get; set; } // true: mở, false: đóng
-
         public virtual ICollection<SensorsDatum> SensorsData { get; set; } = new List<SensorsDatum>();
+        public virtual List<valve> Valves { get; set; } = new List<valve>();
     }
 }

@@ -110,9 +110,22 @@ namespace Central_server.Controllers
             return View("Index");
         }
 
-        private string ConvertToCustomDateTimeFormat(DateTime dateTime)
+        private long ConvertToCustomDateTimeFormat(DateTime dateTime)
         {
-            return dateTime.ToString("yyMMddHHmm");
+            string dt = dateTime.ToString("yyMMddHHmm");
+            long result = 0;
+            foreach (char c in dt)
+            {
+                if (c < '0' || c > '9')
+                {
+                    if (result == 0) continue;
+                    else break;
+                }
+
+                result = result * 10 + (c & 15);
+            }
+
+            return result;
         }
 
     }

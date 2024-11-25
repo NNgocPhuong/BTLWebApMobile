@@ -4,6 +4,7 @@ wwwroot\contact.html
 wwwroot\css\bootstrap.min.css
 wwwroot\css\site.css
 wwwroot\css\style.css
+wwwroot\custom_css\style.css
 wwwroot\chackout.html
 wwwroot\favicon.ico
 wwwroot\images\users\bulb.jpg
@@ -16,11 +17,13 @@ wwwroot\images\users\Lai4.png
 wwwroot\images\users\Linh.jpg
 wwwroot\images\users\pump.jpg
 wwwroot\images\users\Phuong.jpg
+wwwroot\images\users\Phuong.png
 wwwroot\images\users\QuangCao.png
 wwwroot\images\users\QuangCao2.png
 wwwroot\images\users\QuangCao3.png
 wwwroot\images\users\sử dụng add transient,scope,singleton.png
 wwwroot\images\users\Thinh.jpg
+wwwroot\img\icon.png
 wwwroot\index.html
 wwwroot\js\main.js
 wwwroot\js\site.js

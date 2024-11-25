@@ -60,21 +60,22 @@ namespace Central_server.Controllers
 
             return View(stationDetail);
         }
-
+        [HttpPost]
         [Authorize]
         public async Task<IActionResult> ControlValve(int? id)
         {
-            if (id == null)
+            if (id == 0)
             {
-                return BadRequest();
+                return BadRequest(new { statusMessage = "ID không hợp lệ" });
             }
 
             var valve = await _context.Valves.FindAsync(id);
             if (valve == null)
             {
-                return NotFound();
+                return NotFound(new { statusMessage = "Valve không tìm thấy" });
             }
 
+            // Kiểm tra trạng thái hiện tại và chuyển đổi trạng thái
             var actionValue = valve.Status == "1" ? 2 : 3;
             var valveId = int.Parse(valve.ValveName.Split(' ').Last());
             var controlMessage = new
@@ -94,14 +95,18 @@ namespace Central_server.Controllers
                 var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
                 if (response.IsSuccessStatusCode)
                 {
+                    // Cập nhật trạng thái trong DB
                     valve.Status = actionValue == 3 ? "1" : "0";
                     _context.Update(valve);
                     await _context.SaveChangesAsync();
+
+                    return Ok(new { statusMessage = actionValue == 3 ? "Bật" : "Tắt" });
                 }
             }
 
-            return RedirectToAction(nameof(Detail), new { id = valve.StationId });
+            return StatusCode(500, new { statusMessage = "Lỗi khi điều khiển Valve" });
         }
+
 
     }
 }

@@ -1,40 +1,127 @@
 ﻿@model Central_server.ViewModels.StationDetailVM;
-
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 <div class="row">
     @foreach (var item in Model.Valves)
     {
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="rounded position-relative fruite-item">
                 <div class="fruite-img">
-                    <img src="~/images/users/pump.jpg" class="img-fluid w-100 rounded-top" alt="Valve">
+                    <img src="~/images/users/bulb.jpg" class="img-fluid w-100 rounded-top" alt="Valve">
                 </div>
                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                     <h5>Tên: @item.ValveName</h5>
-
                     <div class="d-flex align-items-center">
-                        <p class="mb-0"> Trạng thái: @(item.Status == "1" ? "Bật" : "Tắt") </p>
-                        <a asp-controller="Stations" asp-action="ControlValve" asp-route-id="@item.ValveId" class="status-indicator ml-2 @(item.Status == "1" ? "on" : "off")"> </a>
+                        <p class="mb-0 me-2">Trạng thái:</p>
+                        <label class="switch">
+                            <input type="checkbox" class="control-valve" data-id="@item.ValveId" @(item.Status == "1" ? "checked" : "")>
+                            <span class="slider"></span>
+                        </label>
+                        <span class="status-message ms-3" id="status-@item.ValveId">
+                            @(item.Status == "1" ? "Bật" : "Tắt")
+                        </span>
                     </div>
                 </div>
-
-                <style>
-                    .status-indicator {
-                        width: 20px;
-                        height: 20px;
-                        margin: 10px;
-                        border-radius: 50%;
-                        display: inline-block;
-                    }
-
-                        .status-indicator.on {
-                            background-color: green;
-                        }
-
-                        .status-indicator.off {
-                            background-color: gray;
-                        }
-                </style>
             </div>
         </div>
     }
 </div>
+
+<style>
+    /* Cần gạt kiểu iPhone */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 20px;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+    input:checked + .slider {
+        background-color: #4CAF50;
+    }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+    .status-message {
+        font-size: 14px;
+        color: #6c757d;
+    }
+
+        .status-message.error {
+            color: red;
+        }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.control-valve').on('change', function () {
+            var checkbox = $(this);
+            var valveId = checkbox.data('id'); // Lấy id từ data-id
+            var isChecked = checkbox.is(':checked'); // Trạng thái checkbox
+            var statusSpan = $('#status-' + valveId); // Phần tử hiển thị trạng thái
+
+            // Hiển thị trạng thái chờ
+            var currentState = isChecked ? "Chờ bật" : "Chờ tắt";
+            statusSpan.text(currentState).removeClass('error');
+
+            // Gửi AJAX tới Controller
+            $.ajax({
+                url: `/Stations/ControlValve?id=${valveId}`, // Route tới controller
+                type: 'POST',
+                //contentType: 'application/json', // Loại dữ liệu JSON
+                //data: JSON.stringify({ id: valveId }), // Truyền id trong body
+                success: function (response) {
+                    // Thành công, cập nhật trạng thái
+                    statusSpan.text(isChecked ? "Bật" : "Tắt").removeClass('error');
+                },
+                error: function () {
+                    // Lỗi, hoàn lại trạng thái checkbox và thông báo lỗi
+                    checkbox.prop('checked', !isChecked); // Trả lại trạng thái cũ
+                    statusSpan.text('Lỗi').addClass('error');
+                }
+            });
+
+            // Timeout 8 giây để xử lý chờ
+            setTimeout(function () {
+                if (statusSpan.text() === "Chờ bật" || statusSpan.text() === "Chờ tắt") {
+                    checkbox.prop('checked', !isChecked); // Trả lại trạng thái cũ nếu hết thời gian
+                    statusSpan.text('Lỗi bật/tắt').addClass('error');
+                }
+            }, 8000);
+        });
+    });
+</script>
+

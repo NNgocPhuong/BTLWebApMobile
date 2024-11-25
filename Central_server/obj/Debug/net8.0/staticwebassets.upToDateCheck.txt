@@ -7,9 +7,11 @@ wwwroot\css\style.css
 wwwroot\custom_css\style.css
 wwwroot\chackout.html
 wwwroot\favicon.ico
+wwwroot\images\users\69949798-EB3E-47F6-ABD3-B79D3791FC7C.jpeg
 wwwroot\images\users\bulb.jpg
 wwwroot\images\users\Dang.jpg
 wwwroot\images\users\esp32.jpg
+wwwroot\images\users\icon.png
 wwwroot\images\users\IMG_4357.jpeg
 wwwroot\images\users\Lai1.png
 wwwroot\images\users\Lai3.png

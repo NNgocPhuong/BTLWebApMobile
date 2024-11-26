@@ -1,0 +1,127 @@
+﻿@model IEnumerable<Central_server.ViewModels.SensorDataVM>
+@{
+    ViewData["Title"] = "Statistics";
+}
+
+<div class="container mt-5">
+    <!-- Title Section -->
+    <h2 class="text-center mb-4 display-6 fw-bold text-success">Thống kê Nhiệt độ & Độ ẩm</h2>
+
+    <!-- Filter Section -->
+    <div class="filter-section bg-light p-4 rounded-3 shadow-sm mb-5 border border-success">
+        <form method="get" class="row g-4">
+            <input type="hidden" name="id" value="@Model.ElementAt(0).StationId" />
+
+            <div class="col-md-5">
+                <label for="startDate" class="form-label text-dark fw-bold">Thời gian bắt đầu:</label>
+                <input type="date" class="form-control border-success" id="startDate" name="startDate" />
+            </div>
+
+            <div class="col-md-5">
+                <label for="endDate" class="form-label text-dark fw-bold">Thời gian kết thúc:</label>
+                <input type="date" class="form-control border-success" id="endDate" name="endDate" />
+            </div>
+
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="submit" asp-action="Filter" asp-route-id="@Model.ElementAt(0).StationId" class="btn btn-success w-100">
+                    <i class="bi bi-filter-circle"></i> Lọc
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Data Table Section -->
+    <div class="table-responsive rounded-3 shadow-sm">
+        <table class="table table-bordered">
+            <thead class="bg-success text-white text-center">
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Thời gian</th>
+                    <th scope="col">Nhiệt độ (°C)</th>
+                    <th scope="col">Độ ẩm (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="4" class="text-center text-muted">Không có dữ liệu</td>
+                    </tr>
+                }
+                else
+                {
+                    int serialNumber = 1;
+                    foreach (var item in Model)
+                    {
+                        <tr class="text-center">
+                            <td>@serialNumber</td>
+                            <td>@item.Timestamp?.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                            <td>@item.Temperature</td>
+                            <td>@item.Humidity</td>
+                        </tr>
+                        serialNumber++;
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    h2 {
+        color: #28a745;
+    }
+
+    .filter-section {
+        border-left: 5px solid #28a745;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+        .form-control:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+        }
+
+    .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+    .table-bordered {
+        border: 1px solid #ddd;
+        background-color: #ffffff;
+    }
+
+        .table-bordered thead {
+            background-color: #28a745;
+            color: white;
+            font-size: 1rem;
+        }
+
+    .table-hover tbody tr:hover {
+        background-color: #e9f5ea;
+    }
+
+    .table-responsive {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>

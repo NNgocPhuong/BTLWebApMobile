@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<Central_server.ViewModels.SensorDataVM>
 @{
-    ViewData["Title"] = "Statistics";
+    ViewData["Title"] = "Thống kê";
 }
 
 <div class="container mt-5">
@@ -9,8 +9,8 @@
 
     <!-- Filter Section -->
     <div class="filter-section bg-light p-4 rounded-3 shadow-sm mb-5 border border-success">
-        <form method="get" class="row g-4">
-            <input type="hidden" name="id" value="@Model.ElementAt(0).StationId" />
+        <form method="post" asp-action="Index" asp-controller="Statistics" class="row g-4">
+            <input type="hidden" name="id" value="@Model.FirstOrDefault()?.StationId" />
 
             <div class="col-md-5">
                 <label for="startDate" class="form-label text-dark fw-bold">Thời gian bắt đầu:</label>
@@ -23,12 +23,19 @@
             </div>
 
             <div class="col-md-2 d-flex align-items-end">
-                <button type="submit" asp-action="Filter" asp-route-id="@Model.ElementAt(0).StationId" class="btn btn-success w-100">
+                <button type="submit" class="btn btn-success w-100">
                     <i class="bi bi-filter-circle"></i> Lọc
                 </button>
             </div>
         </form>
     </div>
+    <!-- Hiển thị thông báo nếu không có dữ liệu -->
+    @if (ViewBag.NoDataMessage != null)
+    {
+        <div class="alert alert-warning text-center mt-4">
+            @ViewBag.NoDataMessage
+        </div>
+    }
 
     <!-- Data Table Section -->
     <div class="table-responsive rounded-3 shadow-sm">
@@ -125,3 +132,20 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const startDateInput = document.getElementById("startDate");
+        const endDateInput = document.getElementById("endDate");
+
+        form.addEventListener("submit", function (event) {
+            const startDate = new Date(startDateInput.value);
+            const endDate = new Date(endDateInput.value);
+
+            if (endDate <= startDate) {
+                event.preventDefault(); // Ngăn gửi form
+                alert("Thời gian kết thúc phải lớn hơn thời gian bắt đầu!");
+            }
+        });
+    });
+</script>

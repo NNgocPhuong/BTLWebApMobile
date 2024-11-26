@@ -33,7 +33,7 @@
                                                class="form-control"
                                                id="Schedules[@i].StartTime"
                                                name="Schedules[@i].StartTime"
-                                               required />
+                                               />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -43,7 +43,7 @@
                                                class="form-control"
                                                id="Schedules[@i].EndTime"
                                                name="Schedules[@i].EndTime"
-                                               required />
+                                               />
                                     </div>
                                 </div>
                             </div>
@@ -67,3 +67,43 @@
         background-color: gray;
     }
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function (event) {
+            let isValid = true; // Cờ kiểm tra hợp lệ
+            const schedules = form.querySelectorAll(".card");
+
+            schedules.forEach((schedule, index) => {
+                const startTimeInput = schedule.querySelector(`[name="Schedules[${index}].StartTime"]`);
+                const endTimeInput = schedule.querySelector(`[name="Schedules[${index}].EndTime"]`);
+
+                const startTime = new Date(startTimeInput.value);
+                const endTime = new Date(endTimeInput.value);
+
+                // Kiểm tra EndTime <= StartTime
+                if (endTime <= startTime) {
+                    isValid = false;
+                    alert(`Thời gian kết thúc phải lớn hơn thời gian bắt đầu cho valve: ${index + 1}`);
+                    return;
+                }
+
+                // Thiết lập giá trị mặc định nếu trống
+                if (!startTimeInput.value) {
+                    const defaultStart = new Date();
+                    startTimeInput.value = defaultStart.toISOString().slice(0, 16); // ISO datetime-local format
+                }
+                if (!endTimeInput.value) {
+                    const defaultEnd = new Date();
+                    defaultEnd.setHours(defaultEnd.getHours() + 1); // Mặc định là 1 giờ sau StartTime
+                    endTimeInput.value = defaultEnd.toISOString().slice(0, 16);
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault(); // Ngăn gửi form nếu không hợp lệ
+            }
+        });
+    });
+</script>

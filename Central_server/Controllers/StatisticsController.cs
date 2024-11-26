@@ -8,7 +8,6 @@ namespace Central_server.Controllers
     public class StatisticsController : Controller
     {
         private readonly FarmTrackingContext _context;
-
         public StatisticsController(FarmTrackingContext context)
         {
             _context = context;
@@ -32,26 +31,21 @@ namespace Central_server.Controllers
                 Humidity = x.Humidity,
                 Timestamp = x.Timestamp
             });
-            
             return View(result);
         }
-        public async Task<IActionResult> Filter(int? id, [FromQuery] DateTime? startDate, [FromQuery] DateTime? endDate)
+        [HttpPost]
+        public async Task<IActionResult> Index(FilterVM model)
         {
-            var station = await _context.Stations.FindAsync(id);
+            var station = await _context.Stations.FindAsync(model.Id);
             if (station == null)
             {
                 return NotFound();
             }
 
             var listSensorData = await _context.SensorsData
-                .Where(s => s.StationId == id && s.Timestamp >= startDate && s.Timestamp <= endDate)
+                .Where(s => s.StationId == model.Id && s.Timestamp >= model.startDate && s.Timestamp <= model.endDate)
                 .OrderByDescending(s => s.Timestamp)
                 .ToListAsync();
-
-            if (!listSensorData.Any())
-            {
-                return Content("No data available for the selected date range.");
-            }
 
             var result = listSensorData.Select(x => new SensorDataVM
             {
@@ -60,8 +54,8 @@ namespace Central_server.Controllers
                 Humidity = x.Humidity,
                 Timestamp = x.Timestamp
             });
-
-            return View("Index", result);
+           
+            return View(result);
         }
     }
 }

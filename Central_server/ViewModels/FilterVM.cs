@@ -2,8 +2,8 @@
 {
     public class FilterVM
     {
-        public int? StationId { get; set; }
-        public DateTime? StartTime { get; set; }
-        public DateTime? EndTime { get; set; }
+        public int? Id { get; set; }
+        public DateTime? startDate { get; set; }
+        public DateTime? endDate { get; set; }
     }
 }

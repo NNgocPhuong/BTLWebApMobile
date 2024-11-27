@@ -17,6 +17,7 @@ wwwroot\images\users\Lai1.png
 wwwroot\images\users\Lai3.png
 wwwroot\images\users\Lai4.png
 wwwroot\images\users\Linh.jpg
+wwwroot\images\users\new2.png
 wwwroot\images\users\pump.jpg
 wwwroot\images\users\Phuong.jpg
 wwwroot\images\users\Phuong.png

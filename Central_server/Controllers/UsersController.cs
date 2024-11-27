@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Central_server.Filters;
 
 namespace Central_server.Controllers
 {
@@ -263,6 +264,10 @@ namespace Central_server.Controllers
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
                 await HttpContext.SignInAsync(claimsPrincipal);
+                // Save session
+                //HttpContext.Session.SetString("UserId", user.UserId.ToString());
+                //HttpContext.Session.SetString("FullName", user.FullName);
+                //HttpContext.Session.SetString("Role", "Thành viên nhóm");
                 if (string.IsNullOrEmpty(returnUrl))
                 {
                     return RedirectToAction("Index");
@@ -304,6 +309,7 @@ namespace Central_server.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
+            //HttpContext.Session.Clear();
             return RedirectToAction("Login");
         }
     }

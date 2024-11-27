@@ -2135,6 +2135,88 @@
       ]
     },
     {
+      "Route": "images/users/new2.o30jw4f0z1.png",
+      "AssetFile": "images/users/new2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "959166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Nov 2024 13:23:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o30jw4f0z1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI="
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/new2.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/users/new2.png",
+      "AssetFile": "images/users/new2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "959166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Nov 2024 13:23:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI="
+        }
+      ]
+    },
+    {
       "Route": "images/users/pump.5qp0xeg9jg.jpg",
       "AssetFile": "images/users/pump.jpg",
       "Selectors": [],

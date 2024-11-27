@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cLi24dfUOzVoVBZDODZuYBZr5+vXSQpNCoNi6vGvKJQ=",
+  "Hash": "n+IsVuiNeD7yXoO/IWsyUERQZC5VP6c3habwBgYOOBo=",
   "Source": "Central_server",
   "BasePath": "_content/Central_server",
   "Mode": "Default",
@@ -456,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\Linh.jpg"
+    },
+    {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\new2.png",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/new2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o30jw4f0z1",
+      "Integrity": "RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\new2.png"
     },
     {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
@@ -5853,6 +5874,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-EWGT5jG8NENDcGhwm0Kt+sR11/YCX8ZK32RGxxX6XNw="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/new2.o30jw4f0z1.png",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\new2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "959166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Nov 2024 13:23:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o30jw4f0z1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/new2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/new2.png",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\new2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "959166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Nov 2024 13:23:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RCc1VsoiVzhHtSEK9c2zeQaLI0BFL/6hkj6ewUmWDWI="
         }
       ]
     },

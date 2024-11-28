@@ -93,7 +93,7 @@ namespace Central_server.Controllers
 
             using (var client = new HttpClient())
             {
-                var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
+                var response = await client.PostAsync("http://172.20.10.4/api", content);
                 if (response.IsSuccessStatusCode)
                 {
                     // Cập nhật trạng thái trong DB

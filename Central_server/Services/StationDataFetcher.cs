@@ -18,7 +18,7 @@ namespace Central_server.Services
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(30));
+            _timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(15));
             return Task.CompletedTask;
         }
 
@@ -40,7 +40,7 @@ namespace Central_server.Services
 
                 try
                 {
-                    var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
+                    var response = await client.PostAsync("http://172.20.10.4/api", content);
 
                     if (response.IsSuccessStatusCode)
                     {

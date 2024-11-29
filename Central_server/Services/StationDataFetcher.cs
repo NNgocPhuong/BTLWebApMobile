@@ -9,20 +9,23 @@ namespace Central_server.Services
     public class StationDataFetcher : IHostedService, IDisposable
     {
         private Timer _timer;
+        private readonly ILogger<StationDataFetcher> _logger;
         private readonly IServiceProvider _serviceProvider;
 
-        public StationDataFetcher(IServiceProvider serviceProvider)
+        public StationDataFetcher(IServiceProvider serviceProvider, ILogger<StationDataFetcher> logger)
         {
+            _logger = logger;
             _serviceProvider = serviceProvider;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
+            _logger.LogInformation("StationDataFetcher is starting.");
             _timer = new Timer(DoWork, null, TimeSpan.Zero, TimeSpan.FromSeconds(15));
             return Task.CompletedTask;
         }
 
-        private async void DoWork(object state)
+        private async void DoWork(object? state)
         {
             using (var scope = _serviceProvider.CreateScope())
             {
@@ -40,7 +43,7 @@ namespace Central_server.Services
 
                 try
                 {
-                    var response = await client.PostAsync("http://172.20.10.4/api", content);
+                    var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -114,6 +117,7 @@ namespace Central_server.Services
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
+            _logger.LogInformation("StationDataFetcher is stopping.");
             _timer?.Change(Timeout.Infinite, 0);
             return Task.CompletedTask;
         }

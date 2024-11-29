@@ -5,22 +5,6 @@
       "PackagePath": "staticwebassets\\Central_server.ccndun34bk.bundle.scp.css"
     },
     {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\404.html",
-      "PackagePath": "staticwebassets\\404.html"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\cart.html",
-      "PackagePath": "staticwebassets\\cart.html"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\chackout.html",
-      "PackagePath": "staticwebassets\\chackout.html"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\contact.html",
-      "PackagePath": "staticwebassets\\contact.html"
-    },
-    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -41,10 +25,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\69949798-EB3E-47F6-ABD3-B79D3791FC7C.jpeg",
-      "PackagePath": "staticwebassets\\images\\users\\69949798-EB3E-47F6-ABD3-B79D3791FC7C.jpeg"
-    },
-    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Dang.jpg",
       "PackagePath": "staticwebassets\\images\\users\\Dang.jpg"
     },
@@ -53,40 +33,12 @@
       "PackagePath": "staticwebassets\\images\\users\\IMG_4357.jpeg"
     },
     {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Lai1.png",
-      "PackagePath": "staticwebassets\\images\\users\\Lai1.png"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Lai3.png",
-      "PackagePath": "staticwebassets\\images\\users\\Lai3.png"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Lai4.png",
-      "PackagePath": "staticwebassets\\images\\users\\Lai4.png"
-    },
-    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Linh.jpg",
       "PackagePath": "staticwebassets\\images\\users\\Linh.jpg"
     },
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Phuong.jpg",
       "PackagePath": "staticwebassets\\images\\users\\Phuong.jpg"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Phuong.png",
-      "PackagePath": "staticwebassets\\images\\users\\Phuong.png"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao.png",
-      "PackagePath": "staticwebassets\\images\\users\\QuangCao.png"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao2.png",
-      "PackagePath": "staticwebassets\\images\\users\\QuangCao2.png"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\QuangCao3.png",
-      "PackagePath": "staticwebassets\\images\\users\\QuangCao3.png"
     },
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Thinh.jpg",
@@ -105,24 +57,12 @@
       "PackagePath": "staticwebassets\\images\\users\\icon.png"
     },
     {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\new2.png",
-      "PackagePath": "staticwebassets\\images\\users\\new2.png"
-    },
-    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\pump.jpg",
       "PackagePath": "staticwebassets\\images\\users\\pump.jpg"
     },
     {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\sử dụng add transient,scope,singleton.png",
-      "PackagePath": "staticwebassets\\images\\users\\sử dụng add transient,scope,singleton.png"
-    },
-    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\img\\icon.png",
       "PackagePath": "staticwebassets\\img\\icon.png"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\js\\main.js",
@@ -771,18 +711,6 @@
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\shop-detail.html",
-      "PackagePath": "staticwebassets\\shop-detail.html"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\shop.html",
-      "PackagePath": "staticwebassets\\shop.html"
-    },
-    {
-      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\testimonial.html",
-      "PackagePath": "staticwebassets\\testimonial.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Central_server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

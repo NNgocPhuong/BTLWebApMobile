@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1qWgy+EB+dAs3xm/NAjMIRzkp7jeOZc++dtSRMRP/T0=",
+  "Hash": "0HJ8tkeOljikk0Q7CwUlv868axEoevzmJ2R2Rc5l/XM=",
   "Source": "Central_server",
   "BasePath": "_content/Central_server",
   "Mode": "Default",
@@ -164,6 +164,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\a3.png",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/a3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rhmn72sdi4",
+      "Integrity": "n4DqlGxAoJArTJowiCDrt14JP1Gqm3LlmOJipUfcq9c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\a3.png"
+    },
+    {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",
       "SourceId": "Central_server",
       "SourceType": "Discovered",
@@ -183,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\bulb.jpg"
+    },
+    {
+      "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Clean Architecture.webp",
+      "SourceId": "Central_server",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\",
+      "BasePath": "_content/Central_server",
+      "RelativePath": "images/users/Clean Architecture#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zfm1hbz6zx",
+      "Integrity": "35TlQJS6urQk9vUeIAVLURjE/glAHdmJ3gIEOewX0QM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\Clean Architecture.webp"
     },
     {
       "Identity": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Dang.jpg",
@@ -4352,6 +4394,88 @@
       ]
     },
     {
+      "Route": "images/users/a3.png",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\a3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n4DqlGxAoJArTJowiCDrt14JP1Gqm3LlmOJipUfcq9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Dec 2024 10:03:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n4DqlGxAoJArTJowiCDrt14JP1Gqm3LlmOJipUfcq9c="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/a3.rhmn72sdi4.png",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\a3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n4DqlGxAoJArTJowiCDrt14JP1Gqm3LlmOJipUfcq9c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Dec 2024 10:03:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rhmn72sdi4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/a3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n4DqlGxAoJArTJowiCDrt14JP1Gqm3LlmOJipUfcq9c="
+        }
+      ]
+    },
+    {
       "Route": "images/users/bulb.jpg",
       "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",
       "Selectors": [],
@@ -4430,6 +4554,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yTegh/Vwv51sgCAnRlUn3IpqQEepnT3f7NbR2Ni2O8Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Clean Architecture.webp",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Clean Architecture.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35TlQJS6urQk9vUeIAVLURjE/glAHdmJ3gIEOewX0QM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 08:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-35TlQJS6urQk9vUeIAVLURjE/glAHdmJ3gIEOewX0QM="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/Clean Architecture.zfm1hbz6zx.webp",
+      "AssetFile": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Clean Architecture.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38298"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35TlQJS6urQk9vUeIAVLURjE/glAHdmJ3gIEOewX0QM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 08:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zfm1hbz6zx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/Clean Architecture.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-35TlQJS6urQk9vUeIAVLURjE/glAHdmJ3gIEOewX0QM="
         }
       ]
     },

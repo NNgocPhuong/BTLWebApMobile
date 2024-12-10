@@ -3,7 +3,9 @@ wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\custom_css\style.css
 wwwroot\favicon.ico
+wwwroot\images\users\a3.png
 wwwroot\images\users\bulb.jpg
+wwwroot\images\users\Clean Architecture.webp
 wwwroot\images\users\Dang.jpg
 wwwroot\images\users\esp32.jpg
 wwwroot\images\users\icon.png

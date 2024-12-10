@@ -28,14 +28,13 @@ public partial class FarmTrackingContext : DbContext
     public virtual DbSet<Valf> Valves { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=THINKPAD-T490\\SQLEXPRESS01;Initial Catalog=FarmTracking;Integrated Security=True;Trust Server Certificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=demodb.c72cmsmo8p75.ap-southeast-1.rds.amazonaws.com;Initial Catalog=FarmTracking;Persist Security Info=True;User ID=admin;Password=thinh123;Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Schedule>(entity =>
         {
-            entity.HasKey(e => e.ScheduleId).HasName("PK__Schedule__9C8A5B4902049938");
+            entity.HasKey(e => e.ScheduleId).HasName("PK__Schedule__9C8A5B4973BD4E38");
 
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -49,12 +48,12 @@ public partial class FarmTrackingContext : DbContext
 
             entity.HasOne(d => d.Valve).WithMany(p => p.Schedules)
                 .HasForeignKey(d => d.ValveId)
-                .HasConstraintName("FK__Schedules__Valve__29221CFB");
+                .HasConstraintName("FK__Schedules__Valve__45F365D3");
         });
 
         modelBuilder.Entity<SensorsDatum>(entity =>
         {
-            entity.HasKey(e => e.DataId).HasName("PK__SensorsD__9D05303D61562ED4");
+            entity.HasKey(e => e.DataId).HasName("PK__SensorsD__9D05303D11157755");
 
             entity.Property(e => e.Timestamp)
                 .HasDefaultValueSql("(getdate())")
@@ -62,12 +61,12 @@ public partial class FarmTrackingContext : DbContext
 
             entity.HasOne(d => d.Station).WithMany(p => p.SensorsData)
                 .HasForeignKey(d => d.StationId)
-                .HasConstraintName("FK__SensorsDa__Stati__4E88ABD4");
+                .HasConstraintName("FK__SensorsDa__Stati__46E78A0C");
         });
 
         modelBuilder.Entity<Setting>(entity =>
         {
-            entity.HasKey(e => e.SettingId).HasName("PK__Settings__54372B1DC62303EE");
+            entity.HasKey(e => e.SettingId).HasName("PK__Settings__54372B1D54FA38CD");
 
             entity.Property(e => e.SettingType).HasMaxLength(50);
             entity.Property(e => e.SettingUrl).HasMaxLength(200);
@@ -75,7 +74,7 @@ public partial class FarmTrackingContext : DbContext
 
         modelBuilder.Entity<Station>(entity =>
         {
-            entity.HasKey(e => e.StationId).HasName("PK__Stations__E0D8A6BDA3C474A8");
+            entity.HasKey(e => e.StationId).HasName("PK__Stations__E0D8A6BDD5B0D898");
 
             entity.Property(e => e.Location).HasMaxLength(100);
             entity.Property(e => e.Status).HasDefaultValue(true);
@@ -83,9 +82,13 @@ public partial class FarmTrackingContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CC4CAA3DAAA6");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CC4C8C7FF817");
 
-            entity.HasIndex(e => e.UserName, "UQ__Users__C9F28456E9B663E4").IsUnique();
+            entity.HasIndex(e => e.UserName, "UQ__Users__C9F2845658A03855").IsUnique();
+
+            entity.HasIndex(e => e.UserName, "UQ__Users__C9F284565A1D5448").IsUnique();
+
+            entity.HasIndex(e => e.UserName, "UQ__Users__C9F28456FD51D970").IsUnique();
 
             entity.Property(e => e.FullName).HasMaxLength(100);
             entity.Property(e => e.PhotoUrl).HasMaxLength(200);
@@ -95,7 +98,7 @@ public partial class FarmTrackingContext : DbContext
 
         modelBuilder.Entity<Valf>(entity =>
         {
-            entity.HasKey(e => e.ValveId).HasName("PK__Valves__A5F1AE77B1760FB1");
+            entity.HasKey(e => e.ValveId).HasName("PK__Valves__A5F1AE772556F809");
 
             entity.Property(e => e.LastUpdated)
                 .HasDefaultValueSql("(getdate())")
@@ -106,7 +109,7 @@ public partial class FarmTrackingContext : DbContext
 
             entity.HasOne(d => d.Station).WithMany(p => p.Valves)
                 .HasForeignKey(d => d.StationId)
-                .HasConstraintName("FK__Valves__StationI__02FC7413");
+                .HasConstraintName("FK__Valves__StationI__47DBAE45");
         });
 
         OnModelCreatingPartial(modelBuilder);

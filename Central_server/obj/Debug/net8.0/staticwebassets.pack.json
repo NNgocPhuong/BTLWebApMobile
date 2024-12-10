@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Clean Architecture.webp",
+      "PackagePath": "staticwebassets\\images\\users\\Clean Architecture.webp"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Dang.jpg",
       "PackagePath": "staticwebassets\\images\\users\\Dang.jpg"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Thinh.jpg",
       "PackagePath": "staticwebassets\\images\\users\\Thinh.jpg"
+    },
+    {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\a3.png",
+      "PackagePath": "staticwebassets\\images\\users\\a3.png"
     },
     {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\bulb.jpg",

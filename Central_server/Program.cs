@@ -15,7 +15,19 @@ namespace Central_server
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<FarmTrackingContext>(options =>
                options.UseSqlServer(builder.Configuration.GetConnectionString("FarmTrackingDB")));
-            //add authentication
+
+            // Add CORS policy
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
+
+            // Add authentication
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
@@ -29,17 +41,19 @@ namespace Central_server
                     options.SlidingExpiration = true; // Tự động gia hạn thời gian nếu người dùng tương tác
                     options.Cookie.IsEssential = true; // Đảm bảo cookie hoạt động kể cả khi tuân thủ GDPR
                 });
-            //add session
+
+            // Add session
             builder.Services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromDays(1); // Session sống trong 1 ngày
                 options.Cookie.HttpOnly = true; // Bảo mật cookie
                 options.Cookie.IsEssential = true; // Đảm bảo hoạt động ngay cả với GDPR
             });
+
             // Register the hosted service
             builder.Services.AddHostedService<StationDataFetcher>();
+
             var app = builder.Build();
-            
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -49,20 +63,22 @@ namespace Central_server
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseHttpsRedirection(); // Redirect http to https
+            app.UseStaticFiles(); // Serves static files and short-circuits the pipeline, so to speak
 
-            app.UseRouting();
+            app.UseRouting(); // Adds routing to the request pipeline
 
-            app.UseSession();
+            app.UseCors(); // Use CORS
 
-            app.UseCookiePolicy();
+            app.UseSession(); // Use session
 
-            app.UseAuthentication();
+            app.UseCookiePolicy(); // Use cookie policy
 
-            app.UseAuthorization();
+            app.UseAuthentication(); // Use authentication
 
-            app.MapControllerRoute(
+            app.UseAuthorization(); // Use authorization
+
+            app.MapControllerRoute( // Adds endpoints for controller actions to the IEndpointRouteBuilder without requiring attribute routes
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
@@ -70,3 +86,4 @@ namespace Central_server
         }
     }
 }
+

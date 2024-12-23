@@ -52,7 +52,7 @@ namespace Central_server.Controllers
 
             var result = listSensorData.Select(x => new SensorDataVM
             {
-                StationId = x.StationId,
+                StationId = x.StationId, 
                 Temperature = x.Temperature,
                 Humidity = x.Humidity,
                 Timestamp = x.Timestamp

@@ -43,7 +43,7 @@ namespace Central_server.Services
 
                 try
                 {
-                    var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
+                    var response = await client.PostAsync("http://172.20.10.2/api", content);
 
                     if (response.IsSuccessStatusCode)
                     {

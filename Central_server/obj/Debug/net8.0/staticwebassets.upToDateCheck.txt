@@ -3,6 +3,7 @@ wwwroot\css\site.css
 wwwroot\css\style.css
 wwwroot\custom_css\style.css
 wwwroot\favicon.ico
+wwwroot\images\users\5645e1c5-f97f-424b-92b2-48280c69e2e1.jpg
 wwwroot\images\users\a3.png
 wwwroot\images\users\bulb.jpg
 wwwroot\images\users\Clean Architecture.webp

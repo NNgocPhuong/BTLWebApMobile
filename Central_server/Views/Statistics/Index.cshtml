@@ -4,6 +4,10 @@
 }
 
 <div class="container mt-5">
+    <!-- Back Button Section -->
+    <div class="text-end mt-4">
+        <button type="button" class="btn btn-secondary rounded-pill px-4" onclick="history.back()">Trở về trang trước</button>
+    </div>
     <!-- Title Section -->
     <h2 class="text-center mb-4 display-6 fw-bold text-success">Thống kê Nhiệt độ & Độ ẩm</h2>
 
@@ -29,6 +33,7 @@
             </div>
         </form>
     </div>
+    
     <!-- Hiển thị thông báo nếu không có dữ liệu -->
     @if (ViewBag.NoDataMessage != null)
     {
@@ -72,6 +77,8 @@
             </tbody>
         </table>
     </div>
+
+    
 </div>
 
 <style>
@@ -149,3 +156,5 @@
         });
     });
 </script>
+
+

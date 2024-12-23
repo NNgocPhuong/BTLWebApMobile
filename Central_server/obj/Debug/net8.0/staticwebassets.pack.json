@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\5645e1c5-f97f-424b-92b2-48280c69e2e1.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\5645e1c5-f97f-424b-92b2-48280c69e2e1.jpg"
+    },
+    {
       "Id": "D:\\CodeProjectMini\\Central_server\\Central_server\\wwwroot\\images\\users\\Clean Architecture.webp",
       "PackagePath": "staticwebassets\\images\\users\\Clean Architecture.webp"
     },

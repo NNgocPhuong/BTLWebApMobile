@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\CodeProjectMini\\Central_server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\data\\farmtrackingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\data\\farmtrackingcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\services\\stationdatafetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,24 +15,28 @@
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\schedulercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\statistics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\stations\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\stations\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\data\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,28 +47,12 @@
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\viewmodels\\sensordatavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\stations\\valveitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\stations\\valveitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\stations\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\stations\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\views\\scheduler\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\data\\sensorsdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\data\\sensorsdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\viewmodels\\filtervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\viewmodels\\filtervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|d:\\codeprojectmini\\central_server\\central_server\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E0D236-D89F-483A-B965-319FBCE94321}|Central_server\\Central_server.csproj|solutionrelative:central_server\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -103,51 +87,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FarmTrackingContext.cs",
-              "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Data\\FarmTrackingContext.cs",
-              "RelativeDocumentMoniker": "Central_server\\Data\\FarmTrackingContext.cs",
-              "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Data\\FarmTrackingContext.cs",
-              "RelativeToolTip": "Central_server\\Data\\FarmTrackingContext.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA7wB0AAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T08:24:48.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\appsettings.json",
-              "RelativeDocumentMoniker": "Central_server\\appsettings.json",
-              "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\appsettings.json",
-              "RelativeToolTip": "Central_server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-10T07:45:48.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Users\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Central_server\\Views\\Users\\Delete.cshtml",
-              "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Users\\Delete.cshtml",
-              "RelativeToolTip": "Central_server\\Views\\Users\\Delete.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-06T09:58:38.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "StationsController.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\StationsController.cs",
               "RelativeDocumentMoniker": "Central_server\\Controllers\\StationsController.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\StationsController.cs",
               "RelativeToolTip": "Central_server\\Controllers\\StationsController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAkwEYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T10:25:17.712Z",
               "EditorCaption": ""
@@ -162,12 +107,11 @@
               "RelativeToolTip": "Central_server\\Data\\Station.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T04:44:27.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T04:44:27.111Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "FilterVM.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\ViewModels\\FilterVM.cs",
               "RelativeDocumentMoniker": "Central_server\\ViewModels\\FilterVM.cs",
@@ -175,73 +119,68 @@
               "RelativeToolTip": "Central_server\\ViewModels\\FilterVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T04:28:11.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T04:28:11.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Statistics\\Index.cshtml",
               "RelativeDocumentMoniker": "Central_server\\Views\\Statistics\\Index.cshtml",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Statistics\\Index.cshtml",
               "RelativeToolTip": "Central_server\\Views\\Statistics\\Index.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAnwF4AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:25:38.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T04:25:38.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Scheduler\\Index.cshtml",
               "RelativeDocumentMoniker": "Central_server\\Views\\Scheduler\\Index.cshtml",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Scheduler\\Index.cshtml",
               "RelativeToolTip": "Central_server\\Views\\Scheduler\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAFEAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:02:54.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T04:02:54.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "StationDataFetcher.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Services\\StationDataFetcher.cs",
               "RelativeDocumentMoniker": "Central_server\\Services\\StationDataFetcher.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Services\\StationDataFetcher.cs",
               "RelativeToolTip": "Central_server\\Services\\StationDataFetcher.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCQAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAC0AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T02:48:51.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Central_server\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Central_server\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA+wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T02:17:22.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T02:17:22.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "StatisticsController.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\StatisticsController.cs",
               "RelativeDocumentMoniker": "Central_server\\Controllers\\StatisticsController.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\StatisticsController.cs",
               "RelativeToolTip": "Central_server\\Controllers\\StatisticsController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:14:15.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T00:14:15.96Z"
             },
             {
               "$type": "Document",
@@ -253,12 +192,11 @@
               "RelativeToolTip": "Central_server\\ViewModels\\SensorDataVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:19:59.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T00:19:59.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "SensorsDatum.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Data\\SensorsDatum.cs",
               "RelativeDocumentMoniker": "Central_server\\Data\\SensorsDatum.cs",
@@ -266,60 +204,44 @@
               "RelativeToolTip": "Central_server\\Data\\SensorsDatum.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T00:18:30.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T00:18:30.829Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Stations\\Detail.cshtml",
               "RelativeDocumentMoniker": "Central_server\\Views\\Stations\\Detail.cshtml",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Stations\\Detail.cshtml",
               "RelativeToolTip": "Central_server\\Views\\Stations\\Detail.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvwkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T00:10:46.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-26T00:10:46.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ValveItem.cshtml",
-              "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Stations\\ValveItem.cshtml",
-              "RelativeDocumentMoniker": "Central_server\\Views\\Stations\\ValveItem.cshtml",
-              "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Views\\Stations\\ValveItem.cshtml",
-              "RelativeToolTip": "Central_server\\Views\\Stations\\ValveItem.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-25T15:34:55.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "SchedulerController.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\SchedulerController.cs",
               "RelativeDocumentMoniker": "Central_server\\Controllers\\SchedulerController.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\SchedulerController.cs",
               "RelativeToolTip": "Central_server\\Controllers\\SchedulerController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAIAwwFYAAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAYwFYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T15:11:05.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Central_server\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\CodeProjectMini\\Central_server\\Central_server\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Central_server\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAqwJIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACsBAAAAAAAAAAAAwBIBAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T15:11:04.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T15:11:04.276Z"
             }
           ]
         }

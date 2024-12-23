@@ -84,7 +84,7 @@ namespace Central_server.Controllers
 
                 using (var client = new HttpClient())
                 {
-                    var response = await client.PostAsync("https://ducthinh.serveo.net/api", content);
+                    var response = await client.PostAsync("http://172.20.10.2/api", content);
                     if (response.StatusCode == System.Net.HttpStatusCode.Created)
                     {
                         // Optionally, save the schedules to the database

@@ -1,80 +1,94 @@
 ﻿<div class="welcome-container">
     <div class="text-center">
-        <h1 class="display-4 welcome-heading">Chào mừng tới với nhóm 1</h1>
-        <p class="lead welcome-subheading">Chúng tôi rất vui mừng được chào đón bạn!</p>
+        <h1 class="display-4 welcome-heading">Bài tập cá nhân</h1>
+        <p class="lead welcome-subheading">Thực hiện bởi: <strong>Phạm Thanh Tùng</strong></p>
+        <p class="student-id">MSSV: <strong>20232073P</strong></p>
         <hr class="my-4 welcome-divider">
-        <p class="welcome-message">Nhóm 1 luôn nỗ lực để mang đến những sản phẩm tốt nhất.</p>
+        <p class="welcome-message">
+            ĐỀ TÀI: THIẾT KẾ HỆ THỐNG ĐIỀU KHIỂM MÁY BƠM
+        </p>
         <a class="btn btn-success btn-lg welcome-button" asp-controller="Stations" asp-action="Index" role="button">
-            Tìm hiểu thêm
+            Điều khiển các trạm
         </a>
     </div>
 </div>
 
 <style>
-    /* Container Styles */
+
     .welcome-container {
-        background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9); /* Màu xanh nhạt nhẹ nhàng */
-        padding: 50px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        margin-top: 50px;
-        animation: fadeInEffect 2s ease;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 60px 40px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        margin-top: 60px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 1s ease, transform 1s ease;
+        font-family: 'Quicksand', sans-serif;
     }
 
-    /* Heading Styles */
+    .welcome-container.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .welcome-heading {
-        font-size: 2.5rem;
-        color: #4caf50; /* Màu xanh lá cây đậm nhấn mạnh */
-        margin-bottom: 20px;
+        font-size: 3rem;
+        color: #2e7d32;
+        margin-bottom: 10px;
+        font-weight: 700;
     }
 
-    /* Subheading and Divider */
     .welcome-subheading {
-        font-size: 1.2rem;
-        color: #66bb6a; /* Màu xanh nhạt hơn */
-        margin-bottom: 10px;
+        font-size: 1.3rem;
+        color: #43a047;
+        margin-bottom: 5px;
+    }
+
+    .student-id {
+        font-size: 1.1rem;
+        color: #388e3c;
+        margin-bottom: 15px;
     }
 
     .welcome-divider {
-        border: 1px solid #81c784;
+        border: 1px solid #a5d6a7;
+        width: 60%;
         margin: 20px auto;
-        width: 50%;
     }
 
-    /* Message and Button */
     .welcome-message {
-        font-size: 1rem;
-        color: #2e7d32; /* Màu xanh đậm hơn để làm nổi bật */
-        margin-bottom: 20px;
+        font-size: 1.05rem;
+        color: #1b5e20;
+        margin-bottom: 30px;
+        line-height: 1.6;
     }
 
     .welcome-button {
-        background-color: #4caf50; /* Màu xanh chính */
-        color: white;
-        border: none;
-        transition: transform 0.3s ease, background-color 0.3s ease;
+        background-color: #43a047;
+        padding: 12px 28px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
     }
 
         .welcome-button:hover {
-            background-color: #388e3c; /* Tông xanh đậm hơn khi hover */
-            transform: scale(1.1);
+            background-color: #2e7d32;
+            transform: scale(1.05);
         }
 
-    /* Fade-in Effect (Implemented Directly) */
-    .welcome-container {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 1s ease, transform 1s ease;
+    body {
+        background: linear-gradient(to right, #c8e6c9, #e8f5e9);
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
     }
-
-        .welcome-container.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
 </style>
 
 <script>
-    // Add fade-in effect using JavaScript
     document.addEventListener("DOMContentLoaded", () => {
         const container = document.querySelector('.welcome-container');
         container.classList.add('show');

@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 15 Nov 2024 03:06:18 GMT"
+          "Value": "Tue, 10 Dec 2024 10:24:22 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 15 Nov 2024 03:06:18 GMT"
+          "Value": "Tue, 10 Dec 2024 10:24:22 GMT"
         }
       ],
       "EndpointProperties": [
@@ -357,7 +357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 08:58:19 GMT"
+          "Value": "Tue, 06 May 2025 09:10:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -402,7 +402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 25 Nov 2024 08:58:19 GMT"
+          "Value": "Tue, 06 May 2025 09:10:34 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1147,6 +1147,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-QV7UNwJf1uv8ps/flMNItDDtr+qePtiEky8qSGc+iPI="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/ongAnh.5iham7vzce.jpg",
+      "AssetFile": "images/users/ongAnh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"44YAmNQN6QfjCDwxQUuY3TgOPIkAyYm9q/fJ0t0Oqlk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:05:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5iham7vzce"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-44YAmNQN6QfjCDwxQUuY3TgOPIkAyYm9q/fJ0t0Oqlk="
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/ongAnh.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/users/ongAnh.jpg",
+      "AssetFile": "images/users/ongAnh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"44YAmNQN6QfjCDwxQUuY3TgOPIkAyYm9q/fJ0t0Oqlk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:05:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-44YAmNQN6QfjCDwxQUuY3TgOPIkAyYm9q/fJ0t0Oqlk="
         }
       ]
     },

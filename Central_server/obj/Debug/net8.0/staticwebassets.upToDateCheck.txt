@@ -9,6 +9,7 @@ wwwroot\images\users\esp32.jpg
 wwwroot\images\users\icon.png
 wwwroot\images\users\IMG_4357.jpeg
 wwwroot\images\users\Linh.jpg
+wwwroot\images\users\ongAnh.jpg
 wwwroot\images\users\pump.jpg
 wwwroot\images\users\Phuong.jpg
 wwwroot\images\users\Thinh.jpg
